@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameFieldView" customModule="Nova" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -210,6 +210,12 @@
                                         <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
                                             <color key="value" red="0.98039215686274506" green="0.61568627450980395" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                            <color key="value" white="0.85430044238493141" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                            <color key="value" white="0.84999999999999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lG-SR-DWw" userLabel="Strength" customClass="MBCircularProgressBarView">
@@ -248,6 +254,12 @@
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
                                             <color key="value" red="0.9882352941176471" green="0.28235294117647058" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                            <color key="value" white="0.85430044238493141" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                            <color key="value" white="0.84999999999999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
@@ -288,6 +300,12 @@
                                         <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
                                             <color key="value" red="0.070588235294117646" green="0.64313725490196072" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                            <color key="value" white="0.85430044238493141" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                            <color key="value" white="0.84999999999999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3Z-6U-GRi" userLabel="Hunger" customClass="MBCircularProgressBarView">
@@ -327,6 +345,12 @@
                                         <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
                                             <color key="value" red="0.070588235294117646" green="0.76470588235294112" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineColor">
+                                            <color key="value" white="0.85430044238493141" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="emptyLineStrokeColor">
+                                            <color key="value" white="0.84999999999999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
@@ -347,15 +371,23 @@
                         <constraint firstItem="Mid-nG-d1V" firstAttribute="leading" secondItem="4Ex-55-yeV" secondAttribute="leading" id="dGb-a7-sTt"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDi-9a-RCx" userLabel="content">
+                    <rect key="frame" x="0.0" y="120" width="414" height="654"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="4Ex-55-yeV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5Yv-2V-0b2"/>
                 <constraint firstAttribute="trailing" secondItem="4Ex-55-yeV" secondAttribute="trailing" id="Aj7-Ww-Xuq"/>
+                <constraint firstItem="VDi-9a-RCx" firstAttribute="top" secondItem="Vrq-KZ-1vv" secondAttribute="bottom" id="GQm-cE-MyY"/>
+                <constraint firstAttribute="trailing" secondItem="VDi-9a-RCx" secondAttribute="trailing" id="HQE-8y-ttg"/>
                 <constraint firstAttribute="bottom" secondItem="4Ex-55-yeV" secondAttribute="bottom" id="T2E-8U-iPb"/>
                 <constraint firstItem="Vrq-KZ-1vv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WxP-iw-axf"/>
+                <constraint firstItem="4Ex-55-yeV" firstAttribute="top" secondItem="VDi-9a-RCx" secondAttribute="bottom" id="jRs-8J-5eH"/>
                 <constraint firstAttribute="trailing" secondItem="Vrq-KZ-1vv" secondAttribute="trailing" id="vGv-zF-9fa"/>
                 <constraint firstItem="Vrq-KZ-1vv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xpd-If-mPG"/>
+                <constraint firstItem="VDi-9a-RCx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yZr-3Q-c2t"/>
             </constraints>
             <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
