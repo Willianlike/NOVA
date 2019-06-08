@@ -16,7 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = rootVC()
+        
         return true
+    }
+    
+    func rootVC() -> UIViewController {
+        var vcs = [UIViewController]()
+        let vc1 = GamePathVC()
+        vc1.tabBarItem = GamePathVC.tabItem
+        vcs.append(NavigationVC(rootViewController: vc1))
+        let vc2 = ToolsVC()
+        vc2.tabBarItem = ToolsVC.tabItem
+        vcs.append(NavigationVC(rootViewController: vc2))
+        let vc3 = KnowledgeBookVC()
+        vc3.tabBarItem = KnowledgeBookVC.tabItem
+        vcs.append(NavigationVC(rootViewController: vc3))
+        let vc4 = SettingsVC()
+        vc4.tabBarItem = SettingsVC.tabItem
+        vcs.append(NavigationVC(rootViewController: vc4))
+        return TabBarController(vcs: vcs)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
