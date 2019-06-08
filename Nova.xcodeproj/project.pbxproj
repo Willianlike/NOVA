@@ -15,12 +15,14 @@
 		16377AD122ABACD8003AD022 /* localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16377AD322ABACD8003AD022 /* localization.strings */; };
 		16377AD622ABADA5003AD022 /* loc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AD522ABADA5003AD022 /* loc.swift */; };
 		16377AD822ABAF95003AD022 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AD722ABAF95003AD022 /* NavigationVC.swift */; };
+		16377ADC22ABB29C003AD022 /* ToolsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377ADB22ABB29C003AD022 /* ToolsCollectionView.swift */; };
 		16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF422AB93BD0000DCCD /* AppDelegate.swift */; };
 		16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DF822AB93BD0000DCCD /* Main.storyboard */; };
 		16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFB22AB93BE0000DCCD /* Assets.xcassets */; };
 		16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */; };
 		16F78E0A22AB93BE0000DCCD /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E0922AB93BE0000DCCD /* NovaTests.swift */; };
 		16F78E1522AB93BE0000DCCD /* NovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E1422AB93BE0000DCCD /* NovaUITests.swift */; };
+		D60E9274EE0A7E299B677595 /* Pods_Nova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		16377AD422ABACF0003AD022 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/localization.strings; sourceTree = "<group>"; };
 		16377AD522ABADA5003AD022 /* loc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loc.swift; sourceTree = "<group>"; };
 		16377AD722ABAF95003AD022 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		16377ADB22ABB29C003AD022 /* ToolsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionView.swift; sourceTree = "<group>"; };
 		16F78DF122AB93BD0000DCCD /* Nova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78DF422AB93BD0000DCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F78DF922AB93BD0000DCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +65,9 @@
 		16F78E1022AB93BE0000DCCD /* NovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78E1422AB93BE0000DCCD /* NovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaUITests.swift; sourceTree = "<group>"; };
 		16F78E1622AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15DF0B31F114203AD95C06E /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60E9274EE0A7E299B677595 /* Pods_Nova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +122,14 @@
 			path = SupportinsFiles;
 			sourceTree = "<group>";
 		};
+		16377ADA22ABB284003AD022 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16377ADB22ABB29C003AD022 /* ToolsCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		16F78DE822AB93BD0000DCCD = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +137,8 @@
 				16F78E0822AB93BE0000DCCD /* NovaTests */,
 				16F78E1322AB93BE0000DCCD /* NovaUITests */,
 				16F78DF222AB93BD0000DCCD /* Products */,
+				F2403FD21F6BDB5BF5D219C0 /* Pods */,
+				AE6A8480900C57D62676A40F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				16F78DF422AB93BD0000DCCD /* AppDelegate.swift */,
+				16377ADA22ABB284003AD022 /* Views */,
 				16377AC422ABA93A003AD022 /* Controllers */,
 				16377AD922ABB249003AD022 /* SupportinsFiles */,
 			);
@@ -163,6 +181,24 @@
 			path = NovaUITests;
 			sourceTree = "<group>";
 		};
+		AE6A8480900C57D62676A40F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2403FD21F6BDB5BF5D219C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */,
+				D15DF0B31F114203AD95C06E /* Pods-Nova.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16F78E1922AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "Nova" */;
 			buildPhases = (
+				2373702AEFBAFDF31D709E69 /* [CP] Check Pods Manifest.lock */,
 				16F78DED22AB93BD0000DCCD /* Sources */,
 				16F78DEE22AB93BD0000DCCD /* Frameworks */,
 				16F78DEF22AB93BD0000DCCD /* Resources */,
+				81B98EA130889C83BFCFC03A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,11 +329,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2373702AEFBAFDF31D709E69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nova-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81B98EA130889C83BFCFC03A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nova/Pods-Nova-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAnimated/RxAnimated.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAnimated.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nova/Pods-Nova-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16F78DED22AB93BD0000DCCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16377ADC22ABB29C003AD022 /* ToolsCollectionView.swift in Sources */,
 				16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */,
 				16377AD622ABADA5003AD022 /* loc.swift in Sources */,
 				16377AD822ABAF95003AD022 /* NavigationVC.swift in Sources */,
@@ -487,11 +587,13 @@
 		};
 		16F78E1A22AB93BE0000DCCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDF5KZUR3R;
 				INFOPLIST_FILE = Nova/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,11 +607,13 @@
 		};
 		16F78E1B22AB93BE0000DCCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15DF0B31F114203AD95C06E /* Pods-Nova.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDF5KZUR3R;
 				INFOPLIST_FILE = Nova/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
