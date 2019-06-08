@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ToolCollectionViewCell: UICollectionViewCell {
+class ToolCollectionViewCell: UICollectionViewCell, ReusableView {
 
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var desc: UILabel!
@@ -17,6 +17,12 @@ class ToolCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configure(model: ToolModel) {
+        image.image = model.image
+        desc.text = model.description
+        name.text = model.name
     }
 
 }

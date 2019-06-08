@@ -34,8 +34,6 @@ class ToolsCollectionViewCell: UICollectionViewCell, ReusableView {
     }()
     let stack: UIStackView = {
         let l = UIStackView()
-        l.contentMode = .scaleAspectFit
-        l.clipsToBounds = true
         return l
     }()
     

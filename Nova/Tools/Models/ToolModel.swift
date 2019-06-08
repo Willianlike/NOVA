@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxDataSources
 
-struct ToolModel {
+struct ToolModel: IdentifiableType, Equatable {
     
     var image: UIImage
     var name: String
@@ -22,6 +22,14 @@ struct ToolModel {
         self.image = image
         self.name = name
         self.description = description
+    }
+    
+    var identity: String {
+        return name + description + image.description
+    }
+    
+    static func == (lhs: ToolModel, rhs: ToolModel) -> Bool {
+        return lhs.identity == rhs.identity
     }
     
 }

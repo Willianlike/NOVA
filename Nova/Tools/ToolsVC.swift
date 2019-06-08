@@ -25,7 +25,7 @@ class ToolsVC: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        collectionView = ToolsCollectionView(frame: CGRect(), collectionViewLayout: layout)
+        collectionView = ToolsCollectionView(cards: vm.cards, frame: CGRect(), collectionViewLayout: layout)
         
         super.init(nibName: nil, bundle: nil)
     }
