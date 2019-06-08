@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AC222ABA6DB003AD022 /* TabBarController.swift */; };
+		16377AC622ABA94F003AD022 /* GamePathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AC522ABA94F003AD022 /* GamePathVC.swift */; };
+		16377AC822ABA95E003AD022 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AC722ABA95E003AD022 /* SettingsVC.swift */; };
+		16377ACA22ABA9B0003AD022 /* ToolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AC922ABA9B0003AD022 /* ToolsVC.swift */; };
+		16377ACC22ABA9C3003AD022 /* KnowledgeBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377ACB22ABA9C3003AD022 /* KnowledgeBookVC.swift */; };
 		16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF422AB93BD0000DCCD /* AppDelegate.swift */; };
 		16F78DF722AB93BD0000DCCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF622AB93BD0000DCCD /* ViewController.swift */; };
 		16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DF822AB93BD0000DCCD /* Main.storyboard */; };
@@ -36,6 +40,10 @@
 
 /* Begin PBXFileReference section */
 		16377AC222ABA6DB003AD022 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		16377AC522ABA94F003AD022 /* GamePathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePathVC.swift; sourceTree = "<group>"; };
+		16377AC722ABA95E003AD022 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		16377AC922ABA9B0003AD022 /* ToolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsVC.swift; sourceTree = "<group>"; };
+		16377ACB22ABA9C3003AD022 /* KnowledgeBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeBookVC.swift; sourceTree = "<group>"; };
 		16F78DF122AB93BD0000DCCD /* Nova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78DF422AB93BD0000DCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F78DF622AB93BD0000DCCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16377AC422ABA93A003AD022 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16377AC222ABA6DB003AD022 /* TabBarController.swift */,
+				16377AC522ABA94F003AD022 /* GamePathVC.swift */,
+				16377AC722ABA95E003AD022 /* SettingsVC.swift */,
+				16377AC922ABA9B0003AD022 /* ToolsVC.swift */,
+				16377ACB22ABA9C3003AD022 /* KnowledgeBookVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		16F78DE822AB93BD0000DCCD = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +124,7 @@
 				16F78DF822AB93BD0000DCCD /* Main.storyboard */,
 				16F78DFB22AB93BE0000DCCD /* Assets.xcassets */,
 				16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */,
-				16377AC222ABA6DB003AD022 /* TabBarController.swift */,
+				16377AC422ABA93A003AD022 /* Controllers */,
 				16F78E0022AB93BE0000DCCD /* Info.plist */,
 			);
 			path = Nova;
@@ -261,7 +281,11 @@
 			files = (
 				16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */,
 				16F78DF722AB93BD0000DCCD /* ViewController.swift in Sources */,
+				16377ACA22ABA9B0003AD022 /* ToolsVC.swift in Sources */,
 				16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */,
+				16377AC622ABA94F003AD022 /* GamePathVC.swift in Sources */,
+				16377ACC22ABA9C3003AD022 /* KnowledgeBookVC.swift in Sources */,
+				16377AC822ABA95E003AD022 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
