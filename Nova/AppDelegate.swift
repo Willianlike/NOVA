@@ -26,12 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func rootVC() -> UIViewController {
         var vcs = [UIViewController]()
-        let vc1 = GamePathVC()
-        vc1.tabBarItem = GamePathVC.tabItem
-        vcs.append(NavigationVC(rootViewController: vc1))
         let vc2 = ToolsVC()
         vc2.tabBarItem = ToolsVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc2))
+        let vc1 = GamePathVC()
+        vc1.tabBarItem = GamePathVC.tabItem
+        vcs.append(NavigationVC(rootViewController: vc1))
         let vc3 = KnowledgeBookVC()
         vc3.tabBarItem = KnowledgeBookVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc3))

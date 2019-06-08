@@ -14,5 +14,19 @@ class ToolsVM {
     let cards = Variable<[ToolModel]>([])
     
     init() {
+        cards.value = [ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description"),
+                       ToolModel(image: UIImage(named: "empty"), name: "Empty", description: "description")]
     }
 }

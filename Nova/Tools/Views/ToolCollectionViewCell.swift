@@ -16,7 +16,8 @@ class ToolCollectionViewCell: UICollectionViewCell, ReusableView {
     @IBOutlet weak var stack: UIStackView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 16
     }
     
     func configure(model: ToolModel) {

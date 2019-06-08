@@ -11,6 +11,8 @@ import Cartography
 
 class VCNavigation: UIView {
     
+    static let neededHeight: CGFloat = UIApplication.shared.statusBarFrame.height + 44
+    
     let energyBar = EnergyBar()
     let title: UILabel = {
         let l = UILabel()
@@ -22,6 +24,10 @@ class VCNavigation: UIView {
         let btn = UIButton()
         btn.setImage(UIImage(named: "empty"), for: .normal)
         return btn
+    }()
+    let content: UIView = {
+        let v = UIView()
+        return v
     }()
     
     override init(frame: CGRect) {
@@ -35,24 +41,27 @@ class VCNavigation: UIView {
     }
     
     private func didLoad() {
-        addSubview(energyBar)
-        addSubview(title)
-        addSubview(leftBtn)
+        addSubview(content)
+        content.addSubview(energyBar)
+        content.addSubview(title)
+        content.addSubview(leftBtn)
         
-        constrain(self, energyBar, title, leftBtn) { (view, bar, title, left) in
-            bar.trailing == view.trailing - 16
-            bar.top == view.top + 16
-            bar.bottom == view.bottom - 16
+        constrain(self, content, energyBar, title, leftBtn) { (view, content, bar, title, left) in
+            bar.trailing == content.trailing - 16
+            bar.top == content.top
+            bar.bottom == content.bottom
             bar.width == 60
             
-            left.leading == view.leading + 16
-            left.top == view.top + 16
-            left.bottom == view.bottom - 16
+            left.leading == content.leading
+            left.top == content.top + 16
+            left.bottom == content.bottom
             left.width == 44
             
-            title.top == view.top + 16
-            title.centerX == view.centerX
-            title.bottom == view.bottom - 16
+            title.top == content.top + 16
+            title.centerX == content.centerX
+            title.bottom == content.bottom - 16
+            
+            content.edges == inset(view.edges, UIApplication.shared.statusBarFrame.height, 0, 0, 0)
         }
     }
     

@@ -19,13 +19,16 @@ class ToolsVC: UIViewController {
     
     let collectionView: ToolsCollectionView
     let topBar: VCNavigation = VCNavigation()
+    let backView: UIView = {
+        let v = UIImageView(image: UIImage(named: "background"))
+        return v
+        
+    }()
     
     init() {
         vm = ToolsVM()
         
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        collectionView = ToolsCollectionView(cards: vm.cards, frame: CGRect(), collectionViewLayout: layout)
+        collectionView = ToolsCollectionView(cards: vm.cards, frame: CGRect(), collectionViewLayout: ToolsCollectionView.layout)
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -46,9 +49,10 @@ class ToolsVC: UIViewController {
     }
     
     func setupUI() {
+        view.addSubview(backView)
         view.addSubview(topBar)
         view.addSubview(collectionView)
-        constrain(view, topBar, collectionView) { (view, bar, collection) in
+        constrain(view, topBar, collectionView, backView) { (view, bar, collection, backView) in
             bar.top == view.top
             bar.leading == view.leading
             bar.trailing == view.trailing
@@ -58,6 +62,8 @@ class ToolsVC: UIViewController {
             collection.leading == view.leading
             collection.trailing == view.trailing
             collection.bottom == view.bottom
+            
+            backView.edges == view.edges
         }
     }
     

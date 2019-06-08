@@ -11,8 +11,6 @@ import Cartography
 
 class ToolsCollectionViewCell: UICollectionViewCell, ReusableView {
     
-    static let cellHeight: CGFloat = 150
-    
     let name: UILabel = {
         let l = UILabel()
         l.font = UIFont.systemFont(ofSize: 21, weight: .bold)

@@ -12,11 +12,11 @@ import RxDataSources
 
 struct ToolModel: IdentifiableType, Equatable {
     
-    var image: UIImage
+    var image: UIImage?
     var name: String
     var description: String
     
-    init(image: UIImage,
+    init(image: UIImage?,
          name: String,
          description: String) {
         self.image = image
@@ -25,7 +25,7 @@ struct ToolModel: IdentifiableType, Equatable {
     }
     
     var identity: String {
-        return name + description + image.description
+        return name + description + "\(image?.description)"
     }
     
     static func == (lhs: ToolModel, rhs: ToolModel) -> Bool {

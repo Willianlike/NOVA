@@ -13,7 +13,18 @@ import RxDataSources
 
 class ToolsCollectionView: UICollectionView {
     
+    static let cellHeight: CGFloat = 150
+    
     let disposeBag = DisposeBag()
+    
+    static var layout: UICollectionViewFlowLayout {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 32, height: ToolsCollectionView.cellHeight)
+        layout.minimumInteritemSpacing = 16
+        layout.minimumLineSpacing = 16
+        return layout
+    }
     
     init(cards: Variable<[ToolModel]>, frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
@@ -25,6 +36,8 @@ class ToolsCollectionView: UICollectionView {
             .map { [AnimatableSectionModel<Int, ToolModel>(model: 0, items: $0)] }
             .bind(to: self.rx.items(dataSource: getDataSource()))
             .disposed(by: disposeBag)
+        
+        backgroundColor = .clear
     }
     
     
