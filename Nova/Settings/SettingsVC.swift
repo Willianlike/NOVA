@@ -16,6 +16,7 @@ class SettingsVC: BaseVC {
         b.setImage(UIImage(named: "pencil"), for: .normal)
         b.setTitle(loc.tr("Change"), for: .normal)
         b.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        b.tintColor = .white
         return b
     }()
     
