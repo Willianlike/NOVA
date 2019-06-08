@@ -56,7 +56,7 @@ class ToolsVC: UIViewController {
             bar.top == view.top
             bar.leading == view.leading
             bar.trailing == view.trailing
-            bar.height == 100
+            bar.height == VCNavigation.neededHeight
             
             collection.top == bar.bottom
             collection.leading == view.leading

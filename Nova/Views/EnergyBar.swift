@@ -47,6 +47,7 @@ class EnergyBar: UIView {
     private func didLoad() {
         self.addSubview(background)
         self.addSubview(label)
+        label.text = "\(energy)"
         
         constrain(self, label, background) { view, label, back in
             back.edges == view.edges

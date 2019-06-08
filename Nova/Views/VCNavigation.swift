@@ -11,7 +11,9 @@ import Cartography
 
 class VCNavigation: UIView {
     
-    static let neededHeight: CGFloat = UIApplication.shared.statusBarFrame.height + 44
+    static let neededHeight: CGFloat = topHeight + botHeight
+    static let topHeight: CGFloat = UIApplication.shared.statusBarFrame.height
+    static let botHeight: CGFloat = 44
     
     let energyBar = EnergyBar()
     let title: UILabel = {
@@ -22,7 +24,7 @@ class VCNavigation: UIView {
     }()
     let leftBtn: UIButton = {
         let btn = UIButton()
-        btn.setImage(UIImage(named: "empty"), for: .normal)
+        btn.setImage(UIImage(named: "sourceTree"), for: .normal)
         return btn
     }()
     let content: UIView = {
@@ -50,12 +52,12 @@ class VCNavigation: UIView {
             bar.trailing == content.trailing - 16
             bar.top == content.top
             bar.bottom == content.bottom
-            bar.width == 60
+            bar.width == VCNavigation.botHeight
             
-            left.leading == content.leading
-            left.top == content.top + 16
+            left.leading == content.leading + 16
+            left.top == content.top
             left.bottom == content.bottom
-            left.width == 44
+            left.width == VCNavigation.botHeight
             
             title.top == content.top + 16
             title.centerX == content.centerX
