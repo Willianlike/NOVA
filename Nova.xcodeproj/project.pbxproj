@@ -21,6 +21,8 @@
 		16377AE722ABB950003AD022 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AE622ABB94F003AD022 /* BadgeView.swift */; };
 		16377AE922ABB9D5003AD022 /* EnergyBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AE822ABB9D5003AD022 /* EnergyBar.swift */; };
 		16377AF222ABC3DC003AD022 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AF122ABC3DC003AD022 /* ReusableView.swift */; };
+		166E28CD22AC51B50044F6BA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28CC22AC51B50044F6BA /* GradientView.swift */; };
+		166E28CF22AC52E10044F6BA /* GameProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28CE22AC52E10044F6BA /* GameProfileView.swift */; };
 		16D852E522ABE0F800C4D38F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E422ABE0F800C4D38F /* Colors.swift */; };
 		16D852E722ABE76B00C4D38F /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E622ABE76B00C4D38F /* String+extension.swift */; };
 		16D852E922ABEF7500C4D38F /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E822ABEF7500C4D38F /* SegmentedControl.swift */; };
@@ -88,6 +90,8 @@
 		16377AE622ABB94F003AD022 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		16377AE822ABB9D5003AD022 /* EnergyBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyBar.swift; sourceTree = "<group>"; };
 		16377AF122ABC3DC003AD022 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		166E28CC22AC51B50044F6BA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		166E28CE22AC52E10044F6BA /* GameProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProfileView.swift; sourceTree = "<group>"; };
 		16D852E422ABE0F800C4D38F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		16D852E622ABE76B00C4D38F /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		16D852E822ABEF7500C4D38F /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 				16377AE822ABB9D5003AD022 /* EnergyBar.swift */,
 				16377AF122ABC3DC003AD022 /* ReusableView.swift */,
 				16D852E822ABEF7500C4D38F /* SegmentedControl.swift */,
+				166E28CC22AC51B50044F6BA /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,10 +240,11 @@
 			isa = PBXGroup;
 			children = (
 				16377AC522ABA94F003AD022 /* GameVC.swift */,
+				16D8530422AC192200C4D38F /* GameVM.swift */,
 				16D8530022AC18F400C4D38F /* GameTableView.swift */,
 				16D8530222AC191900C4D38F /* GameStepModel.swift */,
-				16D8530422AC192200C4D38F /* GameVM.swift */,
 				16D8530622AC1B2A00C4D38F /* GameStepTableCell.swift */,
+				166E28CE22AC52E10044F6BA /* GameProfileView.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -532,6 +538,7 @@
 				2398C71722ABD87D007A5421 /* RoundButton.swift in Sources */,
 				16377AD822ABAF95003AD022 /* NavigationVC.swift in Sources */,
 				2398C72522AC21DF007A5421 /* TestVC.swift in Sources */,
+				166E28CF22AC52E10044F6BA /* GameProfileView.swift in Sources */,
 				16D8530122AC18F400C4D38F /* GameTableView.swift in Sources */,
 				16377ADF22ABB4F6003AD022 /* ToolsVM.swift in Sources */,
 				16377AE522ABB72E003AD022 /* VCNavigation.swift in Sources */,
@@ -554,6 +561,7 @@
 				2398C71522ABD866007A5421 /* NovaTopBar.swift in Sources */,
 				2398C72922AC2EC1007A5421 /* GameStepView.swift in Sources */,
 				16D852E922ABEF7500C4D38F /* SegmentedControl.swift in Sources */,
+				166E28CD22AC51B50044F6BA /* GradientView.swift in Sources */,
 				16377AE722ABB950003AD022 /* BadgeView.swift in Sources */,
 				16377AC822ABA95E003AD022 /* SettingsVC.swift in Sources */,
 			);

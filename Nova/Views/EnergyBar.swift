@@ -29,10 +29,15 @@ class EnergyBar: UIView {
     
     var background: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.orange
+        view.backgroundColor = UIColor.orangeBase
         view.clipsToBounds = true
         view.layer.cornerRadius = 15
         return view
+    }()
+    
+    var lighting: UIImageView = {
+        let v = UIImageView(image: UIImage(named: "lighting"))
+        return v
     }()
     
     override init(frame: CGRect) {
@@ -48,11 +53,14 @@ class EnergyBar: UIView {
     private func didLoad() {
         self.addSubview(background)
         self.addSubview(label)
+        self.addSubview(lighting)
         label.text = "\(energy)"
         
-        constrain(self, label, background) { view, label, back in
-            back.edges == inset(view.edges, 8, 0, 8, 0)
+        constrain(self, label, background, lighting) { view, label, back, lighting in
+            back.edges == inset(view.edges, 8, -16, 8, 0)
             label.edges == inset(view.edges, 0, 0, 0, 0)
+            lighting.leading == back.leading + 8
+            lighting.centerY == back.centerY
         }
     }
     
