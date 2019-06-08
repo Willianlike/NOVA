@@ -44,6 +44,8 @@
 		2398C72122AC11F4007A5421 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C72022AC11F4007A5421 /* UIView+extension.swift */; };
 		2398C72322AC134E007A5421 /* GameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C72222AC134E007A5421 /* GameFieldView.swift */; };
 		2398C72522AC21DF007A5421 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C72422AC21DF007A5421 /* TestVC.swift */; };
+		2398C72722AC2EAE007A5421 /* GameStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2398C72622AC2EAE007A5421 /* GameStepView.xib */; };
+		2398C72922AC2EC1007A5421 /* GameStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C72822AC2EC1007A5421 /* GameStepView.swift */; };
 		D60E9274EE0A7E299B677595 /* Pods_Nova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +111,8 @@
 		2398C72022AC11F4007A5421 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		2398C72222AC134E007A5421 /* GameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFieldView.swift; sourceTree = "<group>"; };
 		2398C72422AC21DF007A5421 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		2398C72622AC2EAE007A5421 /* GameStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameStepView.xib; sourceTree = "<group>"; };
+		2398C72822AC2EC1007A5421 /* GameStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStepView.swift; sourceTree = "<group>"; };
 		74D99C34B9938F81AB884C2B /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
 		776208118B136AC13DAB5F35 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
 		784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 				2398C71C22ABF750007A5421 /* GameFieldView.xib */,
 				2398C72222AC134E007A5421 /* GameFieldView.swift */,
 				2398C72422AC21DF007A5421 /* TestVC.swift */,
+				2398C72622AC2EAE007A5421 /* GameStepView.xib */,
+				2398C72822AC2EC1007A5421 /* GameStepView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 				16377AD122ABACD8003AD022 /* localization.strings in Resources */,
 				16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */,
 				16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */,
+				2398C72722AC2EAE007A5421 /* GameStepView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +520,7 @@
 				16D852EE22ABF09C00C4D38F /* KnowledgeVM.swift in Sources */,
 				16D852E722ABE76B00C4D38F /* String+extension.swift in Sources */,
 				2398C71522ABD866007A5421 /* NovaTopBar.swift in Sources */,
+				2398C72922AC2EC1007A5421 /* GameStepView.swift in Sources */,
 				16D852E922ABEF7500C4D38F /* SegmentedControl.swift in Sources */,
 				16377AE722ABB950003AD022 /* BadgeView.swift in Sources */,
 				16377AC822ABA95E003AD022 /* SettingsVC.swift in Sources */,
