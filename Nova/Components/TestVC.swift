@@ -56,7 +56,9 @@ class TestVC: BaseVC {
         for view in gameFieldView!.stepContent.subviews{
             view.removeFromSuperview()
         }
-        //gameFieldView!.stepContent.addSubview(curStep!)
+        curStep!.stepDescription.text = "step " + String(levelNum) + " description"
+        curStep!.stepQuestion.text = "step question?"
+        gameFieldView!.stepContent.addSubview(curStep!)
 
         let ans1 = AnswerView()
         ans1.title.text = "answer 1"
@@ -67,12 +69,10 @@ class TestVC: BaseVC {
         let ans4 = AnswerView()
         ans4.title.text = "answer 4"
 
-        /*curStep?.answers.addSubview(ans1)
+        curStep?.answers.addSubview(ans1)
         curStep?.answers.addSubview(ans2)
         curStep?.answers.addSubview(ans3)
-        curStep?.answers.addSubview(ans4)*/
-        gameFieldView!.stepContent.addSubview(ans1)
-
+        curStep?.answers.addSubview(ans4)
     }
     
 }

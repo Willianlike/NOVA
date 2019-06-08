@@ -30,7 +30,7 @@ class GameStepView : UIView {
     }
 
     func commonInit() {
-        let bundle = Bundle(for: NovaTopBar.self)
+        let bundle = Bundle(for: GameStepView.self)
         bundle.loadNibNamed(nibName, owner: self, options: nil)
         addSubview(content)
         content.frame = self.bounds
