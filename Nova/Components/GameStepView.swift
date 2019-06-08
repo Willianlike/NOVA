@@ -17,7 +17,8 @@ class GameStepView : UIView {
     @IBOutlet weak var stepDescription: UILabel!
     @IBOutlet weak var stepImage: UIImageView!
     @IBOutlet weak var stepQuestion: UILabel!
-
+    @IBOutlet weak var answers: UIView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()

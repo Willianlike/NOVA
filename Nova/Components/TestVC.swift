@@ -56,8 +56,6 @@ class TestVC: BaseVC {
         for view in gameFieldView!.stepContent.subviews{
             view.removeFromSuperview()
         }
-        curStep!.setNeedsLayout()
-        print(curStep!.frame.height)
         gameFieldView!.stepContent.addSubview(curStep!)
     }
     
