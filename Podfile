@@ -17,3 +17,4 @@ target 'Nova' do
     shared_pods
 end
 
+pod "MBCircularProgressBar"
