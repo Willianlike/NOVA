@@ -15,6 +15,9 @@ import Cartography
 
 class TestVC: BaseVC {
 
+    var gameFieldView: GameFieldView?
+    var curStep: GameStepView?
+
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,9 +34,9 @@ class TestVC: BaseVC {
     }
 
     func setupUI() {
-        let gameFieldView = GameFieldView()
-        view.addSubview(gameFieldView)
-        constrain(view, gameFieldView) { (view, gameFieldView) in
+        gameFieldView = GameFieldView()
+        view.addSubview(gameFieldView!)
+        constrain(view, gameFieldView!) { (view, gameFieldView) in
             gameFieldView.top == view.top
             gameFieldView.leading == view.leading
             gameFieldView.trailing == view.trailing
@@ -41,10 +44,21 @@ class TestVC: BaseVC {
             // for testing purposes
             gameFieldView.bottom == view.bottom - (self.tabBarController?.tabBar.frame.height ?? 0)
         }
+        initStep(levelNum: 1, stepName: "step1")
     }
 
     func setupVM() {
 
+    }
+
+    func initStep(levelNum: Int, stepName: String) {
+        curStep = GameStepView();
+        for view in gameFieldView!.stepContent.subviews{
+            view.removeFromSuperview()
+        }
+        curStep!.setNeedsLayout()
+        print(curStep!.frame.height)
+        gameFieldView!.stepContent.addSubview(curStep!)
     }
     
 }

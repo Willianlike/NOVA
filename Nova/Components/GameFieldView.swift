@@ -24,7 +24,8 @@ class GameFieldView : UIView {
     @IBOutlet weak var stageName: UILabel!
     @IBOutlet weak var backButton: RoundButton!
     @IBOutlet weak var valuePower: UILabel!
-
+    @IBOutlet weak var stepContent: UIView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
