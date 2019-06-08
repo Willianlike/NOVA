@@ -396,7 +396,7 @@
                     <rect key="frame" x="0.0" y="120" width="414" height="653"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-Ja-lwU">
-                            <rect key="frame" x="20" y="0.0" width="374" height="1200"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1200" id="S4c-pr-YZT"/>
@@ -404,10 +404,10 @@
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="zHe-Ja-lwU" secondAttribute="trailing" constant="10" id="2AU-fN-DJA"/>
+                        <constraint firstAttribute="trailing" secondItem="zHe-Ja-lwU" secondAttribute="trailing" id="2AU-fN-DJA"/>
                         <constraint firstItem="zHe-Ja-lwU" firstAttribute="centerX" secondItem="zRG-GJ-oWv" secondAttribute="centerX" id="7bM-bl-7nh"/>
                         <constraint firstAttribute="bottom" secondItem="zHe-Ja-lwU" secondAttribute="bottom" id="Hn0-FU-CG1"/>
-                        <constraint firstItem="zHe-Ja-lwU" firstAttribute="leading" secondItem="zRG-GJ-oWv" secondAttribute="leading" constant="20" id="N2c-a0-ToU"/>
+                        <constraint firstItem="zHe-Ja-lwU" firstAttribute="leading" secondItem="zRG-GJ-oWv" secondAttribute="leading" id="N2c-a0-ToU"/>
                         <constraint firstAttribute="bottom" secondItem="zHe-Ja-lwU" secondAttribute="bottom" id="bVt-KO-OJr"/>
                         <constraint firstItem="zHe-Ja-lwU" firstAttribute="top" secondItem="zRG-GJ-oWv" secondAttribute="top" id="p8C-4S-Zcu"/>
                     </constraints>

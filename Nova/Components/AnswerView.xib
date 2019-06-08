@@ -25,6 +25,15 @@
                     <rect key="frame" x="20" y="14" width="374" height="64"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfF-eg-0lK" customClass="RoundButton" customModule="Nova" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="2" width="374" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_watermellon" translatesAutoresizingMaskIntoConstraints="NO" id="UAo-R8-n97">
                             <rect key="frame" x="8" y="8" width="85" height="48"/>
                             <autoresizingMask key="autoresizingMask" heightSizable="YES"/>

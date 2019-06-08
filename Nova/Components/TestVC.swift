@@ -70,9 +70,19 @@ class TestVC: BaseVC {
         ans4.title.text = "answer 4"
 
         curStep?.answers.addSubview(ans1)
+        let offset = CGFloat(75)
+        var rect = ans1.frame.offsetBy(dx: 0, dy: ans1.frame.height + offset)
+        ans2.frame = rect
         curStep?.answers.addSubview(ans2)
+
+        rect = ans2.frame.offsetBy(dx: 0, dy: ans1.frame.height + offset)
+        ans3.frame = rect
         curStep?.answers.addSubview(ans3)
+
+        rect = ans3.frame.offsetBy(dx: 0, dy: ans1.frame.height + offset)
+        ans4.frame = rect
         curStep?.answers.addSubview(ans4)
+
     }
     
 }
