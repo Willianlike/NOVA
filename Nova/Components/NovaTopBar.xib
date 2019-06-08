@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="backButton" destination="A7G-rI-Mlk" id="Xvs-2j-nix"/>
                 <outlet property="progressConstraint" destination="CFS-Ga-tgo" id="ZkX-RR-ctx"/>
-                <outlet property="stageDescription" destination="bUC-3w-5Kv" id="J0D-vp-lVX"/>
                 <outlet property="stageTitle" destination="YoW-lC-zkb" id="lGL-Wa-74x"/>
             </connections>
         </placeholder>
@@ -53,12 +52,6 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Первопроходец" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUC-3w-5Kv" userLabel="player_level">
-                            <rect key="frame" x="152" y="55" width="152" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rs1-b2-QP1" userLabel="progress" customClass="RoundView" customModule="Nova" customModuleProvider="target">
                             <rect key="frame" x="85" y="97.5" width="219" height="9"/>
                             <subviews>
@@ -87,13 +80,56 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSc-cg-Lan" userLabel="power">
+                            <rect key="frame" x="319" y="42" width="85" height="60"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwA-DC-UD8" customClass="RoundView" customModule="Nova" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="10" width="85" height="40"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lighting" translatesAutoresizingMaskIntoConstraints="NO" id="9uq-9M-eoU">
+                                            <rect key="frame" x="0.0" y="-5" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="FfJ-y0-Nkb"/>
+                                                <constraint firstAttribute="width" constant="50" id="lBy-ff-S2m"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sva-6I-JY3">
+                                            <rect key="frame" x="52" y="9.5" width="23" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.68865042529999998" blue="0.2484637961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="9uq-9M-eoU" firstAttribute="centerY" secondItem="dwA-DC-UD8" secondAttribute="centerY" id="0Ya-QA-HdU"/>
+                                        <constraint firstItem="Sva-6I-JY3" firstAttribute="centerY" secondItem="dwA-DC-UD8" secondAttribute="centerY" id="5ob-jC-2wp"/>
+                                        <constraint firstAttribute="height" constant="40" id="D0n-qS-jBi"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sva-6I-JY3" secondAttribute="trailing" constant="10" id="tqc-B1-4dc"/>
+                                        <constraint firstItem="9uq-9M-eoU" firstAttribute="leading" secondItem="dwA-DC-UD8" secondAttribute="leading" id="zmq-G5-bI3"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="CJ3-OT-ewa"/>
+                                <constraint firstItem="dwA-DC-UD8" firstAttribute="centerY" secondItem="YSc-cg-Lan" secondAttribute="centerY" id="Cxm-Gv-1gk"/>
+                                <constraint firstAttribute="height" constant="60" id="Zyi-vY-a2R"/>
+                                <constraint firstItem="dwA-DC-UD8" firstAttribute="centerX" secondItem="YSc-cg-Lan" secondAttribute="centerX" id="bCd-7I-LvH"/>
+                                <constraint firstItem="dwA-DC-UD8" firstAttribute="leading" secondItem="YSc-cg-Lan" secondAttribute="leading" id="k8a-gW-2AG"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <accessibility key="accessibilityConfiguration">
                         <accessibilityTraits key="traits" image="YES"/>
                     </accessibility>
                     <constraints>
-                        <constraint firstItem="bUC-3w-5Kv" firstAttribute="leading" secondItem="A7G-rI-Mlk" secondAttribute="trailing" constant="77" id="0p4-WK-B3K"/>
                         <constraint firstAttribute="bottom" secondItem="bcB-gN-8gW" secondAttribute="bottom" id="3yv-Mr-pfb"/>
                         <constraint firstItem="A7G-rI-Mlk" firstAttribute="top" secondItem="8JJ-GY-U4z" secondAttribute="top" constant="50" id="Q27-Zq-d71"/>
                         <constraint firstItem="YoW-lC-zkb" firstAttribute="top" secondItem="8JJ-GY-U4z" secondAttribute="top" constant="52" id="Qgc-JK-507"/>
@@ -102,12 +138,12 @@
                         <constraint firstAttribute="trailing" secondItem="bcB-gN-8gW" secondAttribute="trailing" id="dQg-nQ-2gy"/>
                         <constraint firstItem="bcB-gN-8gW" firstAttribute="top" secondItem="8JJ-GY-U4z" secondAttribute="top" id="fId-Cj-OFN"/>
                         <constraint firstItem="YoW-lC-zkb" firstAttribute="leading" secondItem="A7G-rI-Mlk" secondAttribute="trailing" constant="10" id="fpQ-1a-Qnh"/>
-                        <constraint firstItem="bUC-3w-5Kv" firstAttribute="top" secondItem="8JJ-GY-U4z" secondAttribute="top" constant="55" id="hLj-Td-WVi"/>
+                        <constraint firstAttribute="trailing" secondItem="YSc-cg-Lan" secondAttribute="trailing" constant="10" id="jTo-A5-oTx"/>
                         <constraint firstItem="A7G-rI-Mlk" firstAttribute="leading" secondItem="8JJ-GY-U4z" secondAttribute="leading" constant="15" id="jf3-kJ-kjK"/>
                         <constraint firstAttribute="trailing" secondItem="Rs1-b2-QP1" secondAttribute="trailing" constant="110" id="lWU-7n-unU"/>
+                        <constraint firstItem="YSc-cg-Lan" firstAttribute="top" secondItem="8JJ-GY-U4z" secondAttribute="top" constant="42" id="m6A-io-UaC"/>
                         <constraint firstItem="Rs1-b2-QP1" firstAttribute="leading" secondItem="A7G-rI-Mlk" secondAttribute="trailing" constant="10" id="wH6-Tt-cnt"/>
                         <constraint firstAttribute="height" constant="120" id="wk6-ts-dx2"/>
-                        <constraint firstAttribute="trailing" secondItem="bUC-3w-5Kv" secondAttribute="trailing" constant="110" id="xnB-HC-5Kb"/>
                     </constraints>
                 </view>
             </subviews>
@@ -123,5 +159,6 @@
     <resources>
         <image name="background" width="375" height="812"/>
         <image name="ic_chevron" width="64" height="64"/>
+        <image name="ic_lighting" width="20" height="42"/>
     </resources>
 </document>

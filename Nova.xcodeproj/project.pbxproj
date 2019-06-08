@@ -37,7 +37,6 @@
 		2398C71522ABD866007A5421 /* NovaTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71422ABD866007A5421 /* NovaTopBar.swift */; };
 		2398C71722ABD87D007A5421 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71622ABD87D007A5421 /* RoundButton.swift */; };
 		2398C71922ABD887007A5421 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71822ABD887007A5421 /* RoundView.swift */; };
-		2398C71B22ABDADF007A5421 /* EnergyBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2398C71A22ABDADF007A5421 /* EnergyBar.xib */; };
 		D60E9274EE0A7E299B677595 /* Pods_Nova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +95,6 @@
 		2398C71422ABD866007A5421 /* NovaTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTopBar.swift; sourceTree = "<group>"; };
 		2398C71622ABD87D007A5421 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2398C71822ABD887007A5421 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
-		2398C71A22ABDADF007A5421 /* EnergyBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnergyBar.xib; sourceTree = "<group>"; };
 		74D99C34B9938F81AB884C2B /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
 		776208118B136AC13DAB5F35 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
 		784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 				16377AE422ABB72E003AD022 /* VCNavigation.swift */,
 				16377AE822ABB9D5003AD022 /* EnergyBar.swift */,
 				16377AF122ABC3DC003AD022 /* ReusableView.swift */,
-				2398C71A22ABDADF007A5421 /* EnergyBar.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,7 +396,6 @@
 			files = (
 				16377AF622ABC582003AD022 /* ToolCollectionViewCell.xib in Resources */,
 				2398C71322ABD853007A5421 /* NovaTopBar.xib in Resources */,
-				2398C71B22ABDADF007A5421 /* EnergyBar.xib in Resources */,
 				16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */,
 				16377AD122ABACD8003AD022 /* localization.strings in Resources */,
 				16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */,
