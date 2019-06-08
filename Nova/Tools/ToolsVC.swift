@@ -65,6 +65,8 @@ class ToolsVC: UIViewController {
             
             backView.edges == view.edges
         }
+        
+        topBar.title.text = loc.tr("Tools")
     }
     
     func setupVM() {

@@ -20,6 +20,7 @@ class VCNavigation: UIView {
         let l = UILabel()
         l.textColor = .white
         l.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        l.textAlignment = .center
         return l
     }()
     let leftBtn: UIButton = {

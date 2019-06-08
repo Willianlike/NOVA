@@ -23,12 +23,13 @@ class EnergyBar: UIView {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
         label.textColor = .white
+        label.textAlignment = .center
         return label
     }()
     
     var background: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
+        view.backgroundColor = UIColor.orange
         view.clipsToBounds = true
         view.layer.cornerRadius = 15
         return view
