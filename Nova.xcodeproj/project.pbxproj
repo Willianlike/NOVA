@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,10 @@
 		16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */; };
 		16F78E0A22AB93BE0000DCCD /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E0922AB93BE0000DCCD /* NovaTests.swift */; };
 		16F78E1522AB93BE0000DCCD /* NovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E1422AB93BE0000DCCD /* NovaUITests.swift */; };
+		2398C71322ABD853007A5421 /* NovaTopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2398C71222ABD853007A5421 /* NovaTopBar.xib */; };
+		2398C71522ABD866007A5421 /* NovaTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71422ABD866007A5421 /* NovaTopBar.swift */; };
+		2398C71722ABD87D007A5421 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71622ABD87D007A5421 /* RoundButton.swift */; };
+		2398C71922ABD887007A5421 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71822ABD887007A5421 /* RoundView.swift */; };
 		D60E9274EE0A7E299B677595 /* Pods_Nova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,12 @@
 		16F78E1022AB93BE0000DCCD /* NovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78E1422AB93BE0000DCCD /* NovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaUITests.swift; sourceTree = "<group>"; };
 		16F78E1622AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2398C71222ABD853007A5421 /* NovaTopBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NovaTopBar.xib; sourceTree = "<group>"; };
+		2398C71422ABD866007A5421 /* NovaTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTopBar.swift; sourceTree = "<group>"; };
+		2398C71622ABD87D007A5421 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		2398C71822ABD887007A5421 /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
+		74D99C34B9938F81AB884C2B /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
+		776208118B136AC13DAB5F35 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
 		784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.debug.xcconfig"; path = "Target Support Files/Pods-Nova/Pods-Nova.debug.xcconfig"; sourceTree = "<group>"; };
 		CF4F0E090FF52F6AE552B315 /* Pods_Nova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15DF0B31F114203AD95C06E /* Pods-Nova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nova.release.xcconfig"; path = "Target Support Files/Pods-Nova/Pods-Nova.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +222,7 @@
 		16F78DF322AB93BD0000DCCD /* Nova */ = {
 			isa = PBXGroup;
 			children = (
+				2398C71122ABD820007A5421 /* Components */,
 				16F78DF422AB93BD0000DCCD /* AppDelegate.swift */,
 				16377AEE22ABBFEE003AD022 /* Views */,
 				16377AE022ABB538003AD022 /* Tools */,
@@ -240,6 +251,17 @@
 			path = NovaUITests;
 			sourceTree = "<group>";
 		};
+		2398C71122ABD820007A5421 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2398C71222ABD853007A5421 /* NovaTopBar.xib */,
+				2398C71422ABD866007A5421 /* NovaTopBar.swift */,
+				2398C71622ABD87D007A5421 /* RoundButton.swift */,
+				2398C71822ABD887007A5421 /* RoundView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		AE6A8480900C57D62676A40F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +275,8 @@
 			children = (
 				784A578BF499E1BC9CC12DA0 /* Pods-Nova.debug.xcconfig */,
 				D15DF0B31F114203AD95C06E /* Pods-Nova.release.xcconfig */,
+				776208118B136AC13DAB5F35 /* Pods-Nova.debug.xcconfig */,
+				74D99C34B9938F81AB884C2B /* Pods-Nova.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -365,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16377AF622ABC582003AD022 /* ToolCollectionViewCell.xib in Resources */,
+				2398C71322ABD853007A5421 /* NovaTopBar.xib in Resources */,
 				16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */,
 				16377AD122ABACD8003AD022 /* localization.strings in Resources */,
 				16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */,
@@ -417,30 +442,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Nova/Pods-Nova-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAnimated/RxAnimated.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
-				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Nova/Pods-Nova-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAnimated.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Nova/Pods-Nova-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,15 +464,18 @@
 				16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */,
 				16377AD622ABADA5003AD022 /* loc.swift in Sources */,
 				16377AE322ABB56A003AD022 /* ToolModel.swift in Sources */,
+				2398C71722ABD87D007A5421 /* RoundButton.swift in Sources */,
 				16377AD822ABAF95003AD022 /* NavigationVC.swift in Sources */,
 				16377ADF22ABB4F6003AD022 /* ToolsVM.swift in Sources */,
 				16377AE522ABB72E003AD022 /* VCNavigation.swift in Sources */,
 				16377AE922ABB9D5003AD022 /* EnergyBar.swift in Sources */,
+				2398C71922ABD887007A5421 /* RoundView.swift in Sources */,
 				16377ACA22ABA9B0003AD022 /* ToolsVC.swift in Sources */,
 				16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */,
 				16377AC622ABA94F003AD022 /* GamePathVC.swift in Sources */,
 				16377AF222ABC3DC003AD022 /* ReusableView.swift in Sources */,
 				16377AF522ABC582003AD022 /* ToolCollectionViewCell.swift in Sources */,
+				2398C71522ABD866007A5421 /* NovaTopBar.swift in Sources */,
 				16377AF022ABC37E003AD022 /* ToolsCollectionViewCell.swift in Sources */,
 				16377ACC22ABA9C3003AD022 /* KnowledgeBookVC.swift in Sources */,
 				16377AE722ABB950003AD022 /* BadgeView.swift in Sources */,
@@ -658,7 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Nova/SupportinsFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -678,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Nova/SupportinsFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
