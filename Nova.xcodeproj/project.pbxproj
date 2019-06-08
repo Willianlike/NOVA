@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16377AC222ABA6DB003AD022 /* TabBarController.swift */; };
 		16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF422AB93BD0000DCCD /* AppDelegate.swift */; };
 		16F78DF722AB93BD0000DCCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF622AB93BD0000DCCD /* ViewController.swift */; };
 		16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DF822AB93BD0000DCCD /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16377AC222ABA6DB003AD022 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		16F78DF122AB93BD0000DCCD /* Nova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78DF422AB93BD0000DCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F78DF622AB93BD0000DCCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				16F78DF822AB93BD0000DCCD /* Main.storyboard */,
 				16F78DFB22AB93BE0000DCCD /* Assets.xcassets */,
 				16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */,
+				16377AC222ABA6DB003AD022 /* TabBarController.swift */,
 				16F78E0022AB93BE0000DCCD /* Info.plist */,
 			);
 			path = Nova;
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */,
 				16F78DF722AB93BD0000DCCD /* ViewController.swift in Sources */,
 				16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */,
 			);
