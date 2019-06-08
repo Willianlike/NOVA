@@ -51,8 +51,8 @@ class EnergyBar: UIView {
         label.text = "\(energy)"
         
         constrain(self, label, background) { view, label, back in
-            back.edges == view.edges
-            label.edges == view.edges
+            back.edges == inset(view.edges, 8, 0, 8, 0)
+            label.edges == inset(view.edges, 0, 0, 0, 0)
         }
     }
     

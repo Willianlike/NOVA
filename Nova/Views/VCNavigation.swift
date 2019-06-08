@@ -60,9 +60,9 @@ class VCNavigation: UIView {
             left.bottom == content.bottom
             left.width == VCNavigation.botHeight
             
-            title.top == content.top + 16
+            title.top == content.top
             title.centerX == content.centerX
-            title.bottom == content.bottom - 16
+            title.bottom == content.bottom
             
             content.edges == inset(view.edges, UIApplication.shared.statusBarFrame.height, 0, 0, 0)
         }

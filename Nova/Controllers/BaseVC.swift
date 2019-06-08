@@ -1,0 +1,29 @@
+//
+//  BaseVC.swift
+//  Nova
+//
+//  Created by Вильян Яумбаев on 08/06/2019.
+//  Copyright © 2019 Вильян Яумбаев. All rights reserved.
+//
+
+import UIKit
+import Cartography
+import RxSwift
+
+class BaseVC: UIViewController {
+    
+    let backView: UIView = {
+        let v = UIImageView(image: UIImage(named: "beautyBackground"))
+        return v
+        
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(backView)
+        constrain(view, backView) { (view, backView) in
+            backView.edges == view.edges
+        }
+    }
+    
+}

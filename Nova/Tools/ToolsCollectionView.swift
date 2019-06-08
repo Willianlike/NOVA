@@ -22,7 +22,6 @@ class ToolsCollectionView: UICollectionView, UICollectionViewDelegateFlowLayout 
     static var layout: UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-//        layout.itemSize = CGSize(width: UIScreen.main.bounds.width - 32, height: ToolsCollectionView.cellHeight)
         layout.minimumInteritemSpacing = 16
         layout.minimumLineSpacing = 16
         layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
@@ -33,8 +32,8 @@ class ToolsCollectionView: UICollectionView, UICollectionViewDelegateFlowLayout 
         self.cards = cards
         super.init(frame: frame, collectionViewLayout: layout)
         
-        register(UINib(nibName: "ToolCollectionViewCell", bundle: nil),
-                 forCellWithReuseIdentifier: ToolCollectionViewCell.reuseIdentifier)
+        register(CardCollectionCell.self,
+                 forCellWithReuseIdentifier: CardCollectionCell.reuseIdentifier)
         
         cards.asObservable()
             .map { [AnimatableSectionModel<Int, ToolModel>(model: 0, items: $0)] }
@@ -47,8 +46,8 @@ class ToolsCollectionView: UICollectionView, UICollectionViewDelegateFlowLayout 
     
     func getDataSource() -> RxCollectionViewSectionedAnimatedDataSource<AnimatableSectionModel<Int, ToolModel>> {
         return RxCollectionViewSectionedAnimatedDataSource<AnimatableSectionModel<Int, ToolModel>> (configureCell: { _, collectionView, indexPath, element in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ToolCollectionViewCell.reuseIdentifier,
-                                                          for: indexPath) as! ToolCollectionViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionCell.reuseIdentifier,
+                                                          for: indexPath) as! CardCollectionCell
             cell.configure(model: element)
             return cell
         })

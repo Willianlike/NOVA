@@ -32,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc1 = GamePathVC()
         vc1.tabBarItem = GamePathVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc1))
-        let vc3 = KnowledgeBookVC()
-        vc3.tabBarItem = KnowledgeBookVC.tabItem
+        let vc3 = KnowledgeVC()
+        vc3.tabBarItem = KnowledgeVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc3))
         let vc4 = SettingsVC()
         vc4.tabBarItem = SettingsVC.tabItem

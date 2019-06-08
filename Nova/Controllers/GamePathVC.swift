@@ -9,7 +9,7 @@
 import UIKit
 
 
-class GamePathVC: UIViewController {
+class GamePathVC: BaseVC {
     
     init() {
         super.init(nibName: nil, bundle: nil)

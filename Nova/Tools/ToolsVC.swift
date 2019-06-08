@@ -13,17 +13,12 @@ import RxDataSources
 import RxCocoa
 import Cartography
 
-class ToolsVC: UIViewController {
+class ToolsVC: BaseVC {
     
     let vm: ToolsVM
     
     let collectionView: ToolsCollectionView
     let topBar: VCNavigation = VCNavigation()
-    let backView: UIView = {
-        let v = UIImageView(image: UIImage(named: "background"))
-        return v
-        
-    }()
     
     init() {
         vm = ToolsVM()
@@ -49,10 +44,9 @@ class ToolsVC: UIViewController {
     }
     
     func setupUI() {
-        view.addSubview(backView)
         view.addSubview(topBar)
         view.addSubview(collectionView)
-        constrain(view, topBar, collectionView, backView) { (view, bar, collection, backView) in
+        constrain(view, topBar, collectionView) { (view, bar, collection) in
             bar.top == view.top
             bar.leading == view.leading
             bar.trailing == view.trailing
@@ -63,7 +57,6 @@ class ToolsVC: UIViewController {
             collection.trailing == view.trailing
             collection.bottom == view.bottom
             
-            backView.edges == view.edges
         }
         
         topBar.title.text = loc.tr("Tools")
