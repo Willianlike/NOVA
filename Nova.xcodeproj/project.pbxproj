@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF422AB93BD0000DCCD /* AppDelegate.swift */; };
+		16F78DF722AB93BD0000DCCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF622AB93BD0000DCCD /* ViewController.swift */; };
+		16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DF822AB93BD0000DCCD /* Main.storyboard */; };
+		16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFB22AB93BE0000DCCD /* Assets.xcassets */; };
+		16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */; };
+		16F78E0A22AB93BE0000DCCD /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E0922AB93BE0000DCCD /* NovaTests.swift */; };
+		16F78E1522AB93BE0000DCCD /* NovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E1422AB93BE0000DCCD /* NovaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16F78E0622AB93BE0000DCCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16F78DE922AB93BD0000DCCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16F78DF022AB93BD0000DCCD;
+			remoteInfo = Nova;
+		};
+		16F78E1122AB93BE0000DCCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16F78DE922AB93BD0000DCCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16F78DF022AB93BD0000DCCD;
+			remoteInfo = Nova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F78DF122AB93BD0000DCCD /* Nova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nova.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F78DF422AB93BD0000DCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16F78DF622AB93BD0000DCCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16F78DF922AB93BD0000DCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16F78DFB22AB93BE0000DCCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16F78DFE22AB93BE0000DCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16F78E0022AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F78E0522AB93BE0000DCCD /* NovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F78E0922AB93BE0000DCCD /* NovaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTests.swift; sourceTree = "<group>"; };
+		16F78E0B22AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F78E1022AB93BE0000DCCD /* NovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F78E1422AB93BE0000DCCD /* NovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaUITests.swift; sourceTree = "<group>"; };
+		16F78E1622AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16F78DEE22AB93BD0000DCCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F78E0222AB93BE0000DCCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F78E0D22AB93BE0000DCCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16F78DE822AB93BD0000DCCD = {
+			isa = PBXGroup;
+			children = (
+				16F78DF322AB93BD0000DCCD /* Nova */,
+				16F78E0822AB93BE0000DCCD /* NovaTests */,
+				16F78E1322AB93BE0000DCCD /* NovaUITests */,
+				16F78DF222AB93BD0000DCCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16F78DF222AB93BD0000DCCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16F78DF122AB93BD0000DCCD /* Nova.app */,
+				16F78E0522AB93BE0000DCCD /* NovaTests.xctest */,
+				16F78E1022AB93BE0000DCCD /* NovaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16F78DF322AB93BD0000DCCD /* Nova */ = {
+			isa = PBXGroup;
+			children = (
+				16F78DF422AB93BD0000DCCD /* AppDelegate.swift */,
+				16F78DF622AB93BD0000DCCD /* ViewController.swift */,
+				16F78DF822AB93BD0000DCCD /* Main.storyboard */,
+				16F78DFB22AB93BE0000DCCD /* Assets.xcassets */,
+				16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */,
+				16F78E0022AB93BE0000DCCD /* Info.plist */,
+			);
+			path = Nova;
+			sourceTree = "<group>";
+		};
+		16F78E0822AB93BE0000DCCD /* NovaTests */ = {
+			isa = PBXGroup;
+			children = (
+				16F78E0922AB93BE0000DCCD /* NovaTests.swift */,
+				16F78E0B22AB93BE0000DCCD /* Info.plist */,
+			);
+			path = NovaTests;
+			sourceTree = "<group>";
+		};
+		16F78E1322AB93BE0000DCCD /* NovaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16F78E1422AB93BE0000DCCD /* NovaUITests.swift */,
+				16F78E1622AB93BE0000DCCD /* Info.plist */,
+			);
+			path = NovaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16F78DF022AB93BD0000DCCD /* Nova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F78E1922AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "Nova" */;
+			buildPhases = (
+				16F78DED22AB93BD0000DCCD /* Sources */,
+				16F78DEE22AB93BD0000DCCD /* Frameworks */,
+				16F78DEF22AB93BD0000DCCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nova;
+			productName = Nova;
+			productReference = 16F78DF122AB93BD0000DCCD /* Nova.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16F78E0422AB93BE0000DCCD /* NovaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F78E1C22AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "NovaTests" */;
+			buildPhases = (
+				16F78E0122AB93BE0000DCCD /* Sources */,
+				16F78E0222AB93BE0000DCCD /* Frameworks */,
+				16F78E0322AB93BE0000DCCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16F78E0722AB93BE0000DCCD /* PBXTargetDependency */,
+			);
+			name = NovaTests;
+			productName = NovaTests;
+			productReference = 16F78E0522AB93BE0000DCCD /* NovaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16F78E0F22AB93BE0000DCCD /* NovaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16F78E1F22AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "NovaUITests" */;
+			buildPhases = (
+				16F78E0C22AB93BE0000DCCD /* Sources */,
+				16F78E0D22AB93BE0000DCCD /* Frameworks */,
+				16F78E0E22AB93BE0000DCCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16F78E1222AB93BE0000DCCD /* PBXTargetDependency */,
+			);
+			name = NovaUITests;
+			productName = NovaUITests;
+			productReference = 16F78E1022AB93BE0000DCCD /* NovaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16F78DE922AB93BD0000DCCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Вильян Яумбаев";
+				TargetAttributes = {
+					16F78DF022AB93BD0000DCCD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					16F78E0422AB93BE0000DCCD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 16F78DF022AB93BD0000DCCD;
+					};
+					16F78E0F22AB93BE0000DCCD = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 16F78DF022AB93BD0000DCCD;
+					};
+				};
+			};
+			buildConfigurationList = 16F78DEC22AB93BD0000DCCD /* Build configuration list for PBXProject "Nova" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16F78DE822AB93BD0000DCCD;
+			productRefGroup = 16F78DF222AB93BD0000DCCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16F78DF022AB93BD0000DCCD /* Nova */,
+				16F78E0422AB93BE0000DCCD /* NovaTests */,
+				16F78E0F22AB93BE0000DCCD /* NovaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16F78DEF22AB93BD0000DCCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */,
+				16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */,
+				16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F78E0322AB93BE0000DCCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F78E0E22AB93BE0000DCCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16F78DED22AB93BD0000DCCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F78DF722AB93BD0000DCCD /* ViewController.swift in Sources */,
+				16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F78E0122AB93BE0000DCCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F78E0A22AB93BE0000DCCD /* NovaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16F78E0C22AB93BE0000DCCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F78E1522AB93BE0000DCCD /* NovaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16F78E0722AB93BE0000DCCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16F78DF022AB93BD0000DCCD /* Nova */;
+			targetProxy = 16F78E0622AB93BE0000DCCD /* PBXContainerItemProxy */;
+		};
+		16F78E1222AB93BE0000DCCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16F78DF022AB93BD0000DCCD /* Nova */;
+			targetProxy = 16F78E1122AB93BE0000DCCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16F78DF822AB93BD0000DCCD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16F78DF922AB93BD0000DCCD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16F78DFE22AB93BE0000DCCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16F78E1722AB93BE0000DCCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16F78E1822AB93BE0000DCCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16F78E1A22AB93BE0000DCCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				INFOPLIST_FILE = Nova/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.Nova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16F78E1B22AB93BE0000DCCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				INFOPLIST_FILE = Nova/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackathon.Nova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16F78E1D22AB93BE0000DCCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				INFOPLIST_FILE = NovaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hackathon.NovaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nova.app/Nova";
+			};
+			name = Debug;
+		};
+		16F78E1E22AB93BE0000DCCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				INFOPLIST_FILE = NovaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hackathon.NovaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nova.app/Nova";
+			};
+			name = Release;
+		};
+		16F78E2022AB93BE0000DCCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				INFOPLIST_FILE = NovaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hackathon.NovaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nova;
+			};
+			name = Debug;
+		};
+		16F78E2122AB93BE0000DCCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HDF5KZUR3R;
+				INFOPLIST_FILE = NovaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hackathon.NovaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Nova;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16F78DEC22AB93BD0000DCCD /* Build configuration list for PBXProject "Nova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F78E1722AB93BE0000DCCD /* Debug */,
+				16F78E1822AB93BE0000DCCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F78E1922AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "Nova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F78E1A22AB93BE0000DCCD /* Debug */,
+				16F78E1B22AB93BE0000DCCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F78E1C22AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "NovaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F78E1D22AB93BE0000DCCD /* Debug */,
+				16F78E1E22AB93BE0000DCCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16F78E1F22AB93BE0000DCCD /* Build configuration list for PBXNativeTarget "NovaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16F78E2022AB93BE0000DCCD /* Debug */,
+				16F78E2122AB93BE0000DCCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16F78DE922AB93BD0000DCCD /* Project object */;
+}
