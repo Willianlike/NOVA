@@ -3,10 +3,8 @@
     "Username": "Вася",
     "Lowbar": {
       "Game": {
-        "Location": [ 
-          { "title" : "Мамонтовая курья",
-           "step": "Step1"
-          },
+        "Location": [
+          "Мамонтовая курья",
           "Two",
           "Three"
         ]
@@ -123,7 +121,8 @@
           "settings": [
             {
               "title": "Force",
-              "count": -2
+              "count": -2,
+              "target" : "Step2"
             }
           ]
         },
@@ -165,7 +164,8 @@
           "settings": [
             {
               "title": "Force",
-              "count": -2
+              "count": -2,
+              "target": "Step3"
             }
           ]
         },
