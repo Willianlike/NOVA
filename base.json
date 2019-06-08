@@ -3,8 +3,10 @@
     "Username": "Вася",
     "Lowbar": {
       "Game": {
-        "Location": [
-          "Мамонтовая курья",
+        "Location": [ 
+          { "title" : "Мамонтовая курья",
+           "step": "Step1"
+          },
           "Two",
           "Three"
         ]
