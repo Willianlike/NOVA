@@ -28,7 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var vcs = [UIViewController]()
         let vc2 = ToolsVC()
         vc2.tabBarItem = ToolsVC.tabItem
-        vcs.append(NavigationVC(rootViewController: vc2))
+        
+        // vcs.append(NavigationVC(rootViewController: vc2))
+        let testvc = TestVC();
+        testvc.tabBarItem = ToolsVC.tabItem
+        vcs.append(NavigationVC(rootViewController: testvc))
+
         let vc1 = GamePathVC()
         vc1.tabBarItem = GamePathVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc1))
