@@ -13,6 +13,7 @@ struct EpisodeModel {
     
     var name: String
     var energy: Int
+    var passed: Bool
     var steps: [StepModel]
     var regardsTools: [ToolModel]
     var regardsKnowledge: [KnowledgeModel]

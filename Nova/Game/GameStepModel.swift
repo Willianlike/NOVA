@@ -11,13 +11,11 @@ import RxDataSources
 
 struct GameStepModel: IdentifiableType {
     
-    var stepId: String
-    var stepType: Type
-    var position: Position
-    var energy: Int? = nil
+//    var position: Position
+    var episode: EpisodeModel
     
     var identity: String {
-        return stepId + stepType.rawValue + position.rawValue
+        return episode.name + "\(episode.passed)"// + position.rawValue
     }
     
     enum Position: String {

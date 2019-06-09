@@ -44,22 +44,22 @@ class GameStepTableCellLeft: BaseGameCell, ReusableView {
     }
     
     func configure(model: GameStepModel) {
-        switch model.stepType {
-        case .highlighted:
-            pointImage.image = UIImage(named: "stepPassed")
-            pathImage.image = UIImage(named: "leftToRightHigh")
-        case .blocked:
-            pointImage.image = UIImage(named: "stepBlocked")
-            pathImage.image = UIImage(named: "leftToRightDef")
-        case .passed:
-            pointImage.image = UIImage(named: "stepPassed")
-            pathImage.image = UIImage(named: "leftToRightHigh")
-        }
-        label.text = model.identity
-        energy.isHidden = model.energy == nil
-        if let ene = model.energy {
-            energy.text = "\(ene)"
-        }
+//        switch model.stepType {
+//        case .highlighted:
+//            pointImage.image = UIImage(named: "stepPassed")
+//            pathImage.image = UIImage(named: "leftToRightHigh")
+//        case .blocked:
+//            pointImage.image = UIImage(named: "stepBlocked")
+//            pathImage.image = UIImage(named: "leftToRightDef")
+//        case .passed:
+//            pointImage.image = UIImage(named: "stepPassed")
+//            pathImage.image = UIImage(named: "leftToRightHigh")
+//        }
+        label.text = model.episode.name
+        energy.isHidden = model.episode.passed != false
+        pathImage.image = model.episode.passed == true ? UIImage(named: "leftToRightHigh") : UIImage(named: "leftToRightDef")
+        pathImage.image = model.episode.passed == true ? UIImage(named: "stepPassed") : UIImage(named: "stepBlocked")
+        energy.text = "\(model.episode.energy)"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -134,22 +134,27 @@ class GameStepTableCellRight: BaseGameCell, ReusableView {
     }
     
     func configure(model: GameStepModel) {
-        switch model.stepType {
-        case .highlighted:
-            pointImage.image = UIImage(named: "stepPassed")
-            pathImage.image = UIImage(named: "rightToLeftHigh")
-        case .blocked:
-            pointImage.image = UIImage(named: "stepBlocked")
-            pathImage.image = UIImage(named: "rightToLeftDef")
-        case .passed:
-            pointImage.image = UIImage(named: "stepPassed")
-            pathImage.image = UIImage(named: "rightToLeftHigh")
-        }
-        label.text = model.identity
-        energy.isHidden = model.energy == nil
-        if let ene = model.energy {
-            energy.text = "\(ene)"
-        }
+        label.text = model.episode.name
+        energy.isHidden = model.episode.passed != false
+        pathImage.image = model.episode.passed == true ? UIImage(named: "leftToRightHigh") : UIImage(named: "leftToRightDef")
+        pathImage.image = model.episode.passed == true ? UIImage(named: "stepPassed") : UIImage(named: "stepBlocked")
+        energy.text = "\(model.episode.energy)"
+//        switch model.stepType {
+//        case .highlighted:
+//            pointImage.image = UIImage(named: "stepPassed")
+//            pathImage.image = UIImage(named: "rightToLeftHigh")
+//        case .blocked:
+//            pointImage.image = UIImage(named: "stepBlocked")
+//            pathImage.image = UIImage(named: "rightToLeftDef")
+//        case .passed:
+//            pointImage.image = UIImage(named: "stepPassed")
+//            pathImage.image = UIImage(named: "rightToLeftHigh")
+//        }
+//        label.text = model.identity
+//        energy.isHidden = model.energy == nil
+//        if let ene = model.energy {
+//            energy.text = "\(ene)"
+//        }
     }
     
     required init?(coder aDecoder: NSCoder) {
