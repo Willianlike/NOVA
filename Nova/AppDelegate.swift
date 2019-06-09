@@ -29,25 +29,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let vc1 = GameVC()
-        vc1.tabBarItem = GameVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc1))
         
         
         let vc2 = ToolsVC()
-        vc2.tabBarItem = ToolsVC.tabItem
-        
-        let testvc = TestVC();
-        testvc.tabBarItem = ToolsVC.tabItem
-        vcs.append(NavigationVC(rootViewController: testvc))
-        
+        vcs.append(NavigationVC(rootViewController: vc2))
         
         let vc3 = KnowledgeVC()
-        vc3.tabBarItem = KnowledgeVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc3))
         
         
         let vc4 = SettingsVC()
-        vc4.tabBarItem = SettingsVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc4))
         
         

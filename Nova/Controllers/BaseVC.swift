@@ -12,10 +12,11 @@ import RxSwift
 
 class BaseVC: UIViewController {
     
+    let disposeBag = DisposeBag()
+    
     let backView: UIView = {
         let v = UIImageView(image: UIImage(named: "beautyBackground"))
         return v
-        
     }()
     
     override func viewDidLoad() {
@@ -24,6 +25,15 @@ class BaseVC: UIViewController {
         constrain(view, backView) { (view, backView) in
             backView.edges == view.edges
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        energyVal.value -= 5
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
 }

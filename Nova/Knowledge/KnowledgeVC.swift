@@ -26,6 +26,7 @@ class KnowledgeVC: BaseVC {
         collectionView = KnowledgeCollectionView(cards: vm.cards, frame: CGRect(), collectionViewLayout: KnowledgeCollectionView.layout)
         
         super.init(nibName: nil, bundle: nil)
+        tabBarItem = KnowledgeVC.tabItem
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,7 +39,6 @@ class KnowledgeVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
         setupVM()
     }

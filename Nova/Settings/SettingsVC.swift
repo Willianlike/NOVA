@@ -42,6 +42,7 @@ class SettingsVC: BaseVC {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        tabBarItem = SettingsVC.tabItem
     }
     
     static var tabItem: UITabBarItem {

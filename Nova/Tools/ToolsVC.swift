@@ -26,6 +26,7 @@ class ToolsVC: BaseVC {
         collectionView = ToolsCollectionView(cards: vm.cards, frame: CGRect(), collectionViewLayout: ToolsCollectionView.layout)
         
         super.init(nibName: nil, bundle: nil)
+        tabBarItem = ToolsVC.tabItem
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,7 +39,6 @@ class ToolsVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
         setupVM()
     }
