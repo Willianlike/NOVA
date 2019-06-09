@@ -19,7 +19,7 @@ class EpisodesBottomBar: UIView {
         let l = UIStackView()
         l.alignment = .center
         l.axis = .horizontal
-        l.distribution = .equalSpacing
+        l.distribution = .fillEqually
         return l
     }()
     
@@ -36,12 +36,12 @@ class EpisodesBottomBar: UIView {
         
         addSubview(stack)
         
-        stack.addArrangedSubview(spacerView)
+//        stack.addArrangedSubview(spacerView)
         for param in params {
             let view = ParamView(param: param)
             stack.addArrangedSubview(view)
         }
-        stack.addArrangedSubview(spacerView)
+//        stack.addArrangedSubview(spacerView)
         
         constrain(stack, self) { (stack, view) in
             stack.edges == view.edges
