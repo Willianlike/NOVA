@@ -34,32 +34,38 @@
 	"tools": [{
 			"title": "Камень",
 			"descript": "Краткая инструкция по применению инструмента в игре",
-			"count": 0
+			"count": 0,
+			"image": "bear_icon"
 		},
 		{
 			"title": "Удочка",
 			"descript": "Краткая инструкция по применению инструмента в игре",
-			"count": 0
+			"count": 0,
+			"image": "bear_icon"
 		},
 		{
 			"title": "Топор",
 			"descript": "Краткая инструкция по применению инструмента в игре",
-			"count": 3
+			"count": 3,
+			"image": "bear_icon"
 		},
 		{
 			"title": "Одежда",
 			"descript": "Краткая инструкция по применению инструмента в игре",
-			"count": 0
+			"count": 0,
+			"image": "bear_icon"
 		},
 		{
 			"title": "Веревка",
 			"descript": "Краткая инструкция по применению инструмента в игре",
-			"count": 0
+			"count": 0,
+			"image": "bear_icon"
 		},
 		{
 			"title": "Консервы",
 			"descript": "Краткая инструкция по применению инструмента в игре",
-			"count": 9
+			"count": 9,
+			"image": "bear_icon"
 		}
 	],
 	"episodes": [{
