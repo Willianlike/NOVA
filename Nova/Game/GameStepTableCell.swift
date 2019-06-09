@@ -58,7 +58,7 @@ class GameStepTableCellLeft: BaseGameCell, ReusableView {
         label.text = model.episode.name
         energy.isHidden = model.episode.passed != false
         pathImage.image = model.episode.passed == true ? UIImage(named: "leftToRightHigh") : UIImage(named: "leftToRightDef")
-        pathImage.image = model.episode.passed == true ? UIImage(named: "stepPassed") : UIImage(named: "stepBlocked")
+        pointImage.image = model.episode.passed == true ? UIImage(named: "stepPassed") : UIImage(named: "stepBlocked")
         energy.text = "\(model.episode.energy)"
     }
     
@@ -136,8 +136,8 @@ class GameStepTableCellRight: BaseGameCell, ReusableView {
     func configure(model: GameStepModel) {
         label.text = model.episode.name
         energy.isHidden = model.episode.passed != false
-        pathImage.image = model.episode.passed == true ? UIImage(named: "leftToRightHigh") : UIImage(named: "leftToRightDef")
-        pathImage.image = model.episode.passed == true ? UIImage(named: "stepPassed") : UIImage(named: "stepBlocked")
+        pathImage.image = model.episode.passed == true ? UIImage(named: "rightToLeftHigh") : UIImage(named: "rightToLeftDef")
+        pointImage.image = model.episode.passed == true ? UIImage(named: "stepPassed") : UIImage(named: "stepBlocked")
         energy.text = "\(model.episode.energy)"
 //        switch model.stepType {
 //        case .highlighted:

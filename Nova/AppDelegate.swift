@@ -76,7 +76,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if let tools = try? json["tools"].arrayValue.map({ try ToolModel(json: $0) }) {
                     toolsVal.value = tools
                 }
-                if let episodes = try? json["episodes"].arrayValue.map({ try EpisodeModel(json: $0) }).map({ GameStepModel(episode: $0)}) {
+                if var episodes = try? json["episodes"].arrayValue.map({ try EpisodeModel(json: $0) }).map({ GameStepModel(episode: $0)}) {
+                    if episodes.count > 0 {
+                        episodes[0].episode.passed = true
+                    }
                     episodesVal.value = episodes
                 }
         }

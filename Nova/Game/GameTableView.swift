@@ -27,14 +27,13 @@ class GameTableView: UITableView {
         register(GameStepTableCellRight.self, forCellReuseIdentifier: GameStepTableCellRight.reuseIdentifier)
         
         let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, GameStepModel>>(configureCell: { dataSource, tableView, indexPath, model in
-            switch indexPath.row % 2 == 0 {
-            case true:
+            if indexPath.row % 2 == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: GameStepTableCellLeft.reuseIdentifier,
                                                          for: indexPath) as! GameStepTableCellLeft
                 cell.configure(model: model)
                 cell.transform = CGAffineTransform(rotationAngle: (-.pi))
                 return cell
-            case false:
+            } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: GameStepTableCellRight.reuseIdentifier,
                                                          for: indexPath) as! GameStepTableCellRight
                 cell.configure(model: model)
