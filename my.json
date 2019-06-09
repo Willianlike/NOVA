@@ -84,7 +84,7 @@
 				"answers": [{
 						"name": "Найти кость чтобы сделать нож",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step1_0"
@@ -92,7 +92,7 @@
 					{
 						"name": "Найти камни чтобы сделать ловушку загон для рыб",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step1_1"
@@ -100,7 +100,7 @@
 					{
 						"name": "Кричать о помощи вдруг кто услышит",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2,
 							"target": "Step2"
 						}],
@@ -109,7 +109,7 @@
 					{
 						"name": "Выложить из вещей камней надпись SOS",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step1_3"
@@ -122,7 +122,7 @@
 				"answers": [{
 						"name": "Долго кричать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step2_0"
@@ -130,7 +130,7 @@
 					{
 						"name": "Свистеть",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step2_1"
@@ -138,7 +138,7 @@
 					{
 						"name": "Громко кричать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2,
 							"target": "Step3"
 						}],
@@ -147,7 +147,7 @@
 					{
 						"name": "Рычать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step2_3"
@@ -161,7 +161,7 @@
 				"answers": [{
 						"name": "Быстро убежать и скрыться за препятствием",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2,
 							"target": "Congratulations"
 						}],
@@ -170,7 +170,7 @@
 					{
 						"name": "Лечь и притвориться мертвым",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_1"
@@ -178,7 +178,7 @@
 					{
 						"name": "Побежать ему на встречу и напугать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_2"
@@ -186,7 +186,7 @@
 					{
 						"name": "Нырнуть под воду",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_3"
@@ -194,7 +194,7 @@
 					{
 						"name": "Нырнуть под воду",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_4"
@@ -224,7 +224,7 @@
 				"answers": [{
 						"name": "Найти кость чтобы сделать нож",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step1_0"
@@ -240,7 +240,7 @@
 					{
 						"name": "Кричать о помощи вдруг кто услышит",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2,
 							"target": "Step2"
 						}],
@@ -249,7 +249,7 @@
 					{
 						"name": "Выложить из вещей камней надпись SOS",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step1_3"
@@ -262,7 +262,7 @@
 				"answers": [{
 						"name": "Долго кричать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step2_0"
@@ -270,7 +270,7 @@
 					{
 						"name": "Свистеть",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step2_1"
@@ -278,7 +278,7 @@
 					{
 						"name": "Громко кричать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2,
 							"target": "Step3"
 						}],
@@ -287,7 +287,7 @@
 					{
 						"name": "Рычать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step2_3"
@@ -301,7 +301,7 @@
 				"answers": [{
 						"name": "Быстро убежать и скрыться за препятствием",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2,
 							"target": "Congratulations"
 						}],
@@ -310,7 +310,7 @@
 					{
 						"name": "Лечь и притвориться мертвым",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_1"
@@ -318,7 +318,7 @@
 					{
 						"name": "Побежать ему на встречу и напугать",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_2"
@@ -326,7 +326,7 @@
 					{
 						"name": "Нырнуть под воду",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_3"
@@ -334,7 +334,7 @@
 					{
 						"name": "Нырнуть под воду",
 						"settings": [{
-							"title": "Force",
+							"title": "Сила",
 							"count": -2
 						}],
 						"image": "step3_4"
