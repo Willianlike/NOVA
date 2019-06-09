@@ -13,7 +13,7 @@ import SwiftyJSON
 struct EpisodeModel: JSONDecodable {
     init(json: JSON) throws {
         name = json["title"].stringValue
-        energy = json["count"].intValue
+        energy = json["energy"].intValue
         passed = false
         steps = try json["steps"].arrayValue.map({ try StepModel(json: $0) })
         regardsTools = try json["regardsTools"].arrayValue.map({ try ToolModel(json: $0) })

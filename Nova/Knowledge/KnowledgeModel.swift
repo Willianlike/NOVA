@@ -16,13 +16,14 @@ struct KnowledgeModel: IdentifiableType, Equatable, JSONDecodable {
         image = json["image"].stringValue
         name = json["title"].stringValue
         description = json["descript"].stringValue
+        startHidden = !json["views"].boolValue
     }
     
     
     var image: String
     var name: String
     var description: String
-    var startHidden: Bool = false
+    var startHidden: Bool = true
     
     let firstFont = UIFont.systemFont(ofSize: 20, weight: .bold)
     let secondFont = UIFont.systemFont(ofSize: 13, weight: .light)
@@ -30,7 +31,7 @@ struct KnowledgeModel: IdentifiableType, Equatable, JSONDecodable {
     init(image: String,
          name: String,
          description: String,
-         startHidden: Bool = false) {
+         startHidden: Bool = true) {
         self.image = image
         self.name = name
         self.description = description

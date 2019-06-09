@@ -35,6 +35,7 @@ class KnowledgeCollectionView: UICollectionView, UICollectionViewDelegateFlowLay
         register(CardCollectionCell.self, forCellWithReuseIdentifier: CardCollectionCell.reuseIdentifier)
         
         cards.asObservable()
+            .map({ $0.filter({ !$0.startHidden }) })
             .map { [AnimatableSectionModel<Int, KnowledgeModel>(model: 0, items: $0)] }
             .bind(to: self.rx.items(dataSource: getDataSource()))
             .disposed(by: disposeBag)

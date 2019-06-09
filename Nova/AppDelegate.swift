@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ArcticInfoRetriever.retrieve { (success, info: ArcticInfo?) in
             if let temp = info?.temperature {
                 print("Arctic temperature: \(temp)")
+                arcticTemp.value = temp
             } else {
                 print("Arctic temperature fail")
             }
@@ -50,7 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vcs.append(NavigationVC(rootViewController: vc3))
         
         
-        let vc4 = SettingsVC()
+        let vc4 = ScrollVC()
+        vc4.image.image = UIImage(named: "settingsScreen")
+        vc4.tabBarItem = SettingsVC.tabItem
         vcs.append(NavigationVC(rootViewController: vc4))
         
         
@@ -78,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 if var episodes = try? json["episodes"].arrayValue.map({ try EpisodeModel(json: $0) }).map({ GameStepModel(episode: $0)}) {
                     if episodes.count > 0 {
-                        episodes[0].episode.passed = true
+//                        episodes[0].episode.passed = true
                     }
                     episodesVal.value = episodes
                 }

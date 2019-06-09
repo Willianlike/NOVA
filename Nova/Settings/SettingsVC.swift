@@ -7,7 +7,42 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import Cartography
+
+class ScrollVC: BaseVC {
+    
+    
+    let scroll: UIScrollView = {
+        let v = UIScrollView()
+        return v
+    }()
+    
+    let image: UIImageView = {
+        let v = UIImageView(image: UIImage(named: "settingsScreen"))
+        v.contentMode = .scaleAspectFit
+        return v
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(scroll)
+        scroll.addSubview(image)
+        constrain(image, scroll, view) { (image, scroll, view) in
+            image.edges == scroll.edges
+            scroll.edges == view.edges
+            image.width == scroll.width
+        }
+        
+        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 100))
+        btn.rx.tap.asObservable().subscribe(onNext: { [unowned self] _ in
+            self.navigationController?.popViewController(animated: true)
+        }).disposed(by: disposeBag)
+        view.addSubview(btn)
+    }
+    
+}
 
 class SettingsVC: BaseVC {
     
@@ -59,25 +94,24 @@ class SettingsVC: BaseVC {
     }
     
     func setupUI() {
-        view.addSubview(content)
         content.addSubview(leftBtn)
         content.addSubview(energyBar)
         content.addSubview(profilename)
         content.addSubview(profileImage)
-        
+
         constrain(view, content, leftBtn, energyBar) { (view, content, leftBtn, energyBar) in
             leftBtn.leading == content.leading + 16
             leftBtn.top == content.top
             leftBtn.height == 44
-            
+
             energyBar.top == content.top
             energyBar.trailing == content.trailing - 16
             energyBar.height == 44
             energyBar.width == 44
-            
-            
-            
-            
+
+
+
+
             content.edges == inset(view.edges, VCNavigation.topHeight, 0, 0, 0)
         }
     }

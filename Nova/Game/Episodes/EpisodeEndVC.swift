@@ -34,22 +34,22 @@ class EpisodeEndVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegate
         return 2
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return section == 0 ? episode.regardsTools.count + 1 : episode.regardsKnowledge.count + 1
+        return section != 0 ? episode.regardsTools.count + 1 : episode.regardsKnowledge.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardCollectionCell.reuseIdentifier, for: indexPath) as! CardCollectionCell
-        if indexPath.section == 0 {
+        if indexPath.section != 0 {
             if indexPath.row == 0 {
                 let cel = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.reuseIdentifier, for: indexPath) as! TitleCollectionViewCell
-                cel.title.text = "Tools"
+                cel.title.text = "Вы получили новые инструменты"
                 return cel
             }
             cell.configure(model: episode.regardsTools[indexPath.row - 1])
         } else {
             if indexPath.row == 0 {
                 let cel = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.reuseIdentifier, for: indexPath) as! TitleCollectionViewCell
-                cel.title.text = "Knowledge"
+                cel.title.text = "Получены новые знания"
                 return cel
             }
             cell.configure(model: episode.regardsKnowledge[indexPath.row - 1])
@@ -58,7 +58,7 @@ class EpisodeEndVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if indexPath.section == 0 {
+        if indexPath.section != 0 {
             if indexPath.row == 0 {
                 return CGSize(width: UIScreen.main.bounds.width - 32, height: 70)
             }
@@ -114,6 +114,22 @@ class EpisodeEndVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegate
         }
         
         topBar.closeBtn.rx.tap.asObservable().subscribe(onNext: { [unowned self] _ in
+            if let index = episodesVal.value.firstIndex(where: { (model) -> Bool in
+                return model.episode.name == self.episode.name
+            }) {
+                episodesVal.value[index].episode.passed = true
+            }
+            energyVal.value -= self.episode.energy
+            for tool in self.episode.regardsTools {
+                if let index = toolsVal.value.firstIndex(where: { $0.name == tool.name }) {
+                    toolsVal.value[index].count += tool.count
+                }
+            }
+            for knowledge in self.episode.regardsKnowledge {
+                if let index = knowledgeVal.value.firstIndex(where: { $0.name == knowledge.name }) {
+                    knowledgeVal.value[index].startHidden = knowledge.startHidden
+                }
+            }
             self.dismiss(animated: true, completion: nil)
         }).disposed(by: disposeBag)
         

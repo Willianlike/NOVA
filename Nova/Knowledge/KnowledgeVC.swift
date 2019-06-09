@@ -78,6 +78,12 @@ class KnowledgeVC: BaseVC {
     
     func setupVM() {
         
+        
+        collectionView.rx.itemSelected.asObservable().subscribe(onNext: { [unowned self] _ in
+            let vc = ScrollVC()
+            vc.image.image = UIImage(named: "factScreen")
+            self.navigationController?.pushViewController(vc, animated: true)
+        }).disposed(by: disposeBag)
     }
     
 }

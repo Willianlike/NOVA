@@ -85,7 +85,8 @@ class EpisodeStepView: UIView {
         }
         
         lbl.text = answer.title
-        i.image = UIImage(named: answer.image)
+//        i.image = UIImage(named: answer.image)
+        i.image = UIImage(named: "checkout")
         
         btn.rx.tap.asObservable().map { _ in answer }.bind(to: answer.click).disposed(by: disposeBag)
         btn.rx.tap.asObservable().map { _ in answer }.bind(to: answerClick).disposed(by: disposeBag)

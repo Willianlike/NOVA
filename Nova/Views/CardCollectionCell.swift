@@ -32,7 +32,7 @@ class CardCollectionCell: UICollectionViewCell, ReusableView {
     }()
     var image: UIImageView = {
         let l = UIImageView()
-        l.contentMode = .scaleAspectFill
+        l.contentMode = .scaleAspectFit
         return l
     }()
     var content: UIView = {

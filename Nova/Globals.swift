@@ -48,7 +48,7 @@ let energyVal = Variable<Int>(100)
 //    ]
 //)
 let episodesVal = Variable<[GameStepModel]>([])
-
+let arcticTemp = Variable<Float>(-52)
 let paramsVal = Variable<[Variable<Param>]>([Variable<Param>(Param(name: "Время", value: 100, color: .yel)),
                                    Variable<Param>(Param(name: "Сила", value: 100, color: .carrot)),
                                    Variable<Param>(Param(name: "Здоровье", value: 100, color: .blueBase)),

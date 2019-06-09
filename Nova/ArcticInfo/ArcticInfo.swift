@@ -34,13 +34,13 @@ class ArcticInfo {
                     info.temperature = Float(temperature)!
                 }
                 if let dewPoint: String = obs["dewPoint"] as? String {
-                    info.dewPoint = Float(dewPoint)!
+                    info.dewPoint = Float(dewPoint) ?? 0
                 }
                 if let humidity: String = obs["humidity"] as? String {
-                    info.humidity = Float(humidity)!
+                    info.humidity = Float(humidity) ?? 0
                 }
                 if let windSpeed: String = obs["windSpeed"] as? String {
-                    info.windSpeed = Float(windSpeed)!
+                    info.windSpeed = Float(windSpeed) ?? 0
                 }
                 return info
             }

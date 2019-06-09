@@ -27,10 +27,10 @@ class BaseVC: UIViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        energyVal.value -= 5
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        energyVal.value -= 5
+//    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent

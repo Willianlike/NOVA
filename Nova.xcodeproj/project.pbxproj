@@ -34,6 +34,7 @@
 		166E28E622ACA8EC0044F6BA /* EpisodeEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E522ACA8EC0044F6BA /* EpisodeEndVC.swift */; };
 		166E28E822ACAE3A0044F6BA /* EpisodeEndTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E722ACAE3A0044F6BA /* EpisodeEndTopBar.swift */; };
 		166E28EA22AD00710044F6BA /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E922AD00710044F6BA /* JSON.swift */; };
+		166E28EC22AD32230044F6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166E28EB22AD32220044F6BA /* Assets.xcassets */; };
 		16D852E522ABE0F800C4D38F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E422ABE0F800C4D38F /* Colors.swift */; };
 		16D852E722ABE76B00C4D38F /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E622ABE76B00C4D38F /* String+extension.swift */; };
 		16D852E922ABEF7500C4D38F /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E822ABEF7500C4D38F /* SegmentedControl.swift */; };
@@ -49,7 +50,6 @@
 		16D8530722AC1B2A00C4D38F /* GameStepTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D8530622AC1B2A00C4D38F /* GameStepTableCell.swift */; };
 		16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78DF422AB93BD0000DCCD /* AppDelegate.swift */; };
 		16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DF822AB93BD0000DCCD /* Main.storyboard */; };
-		16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFB22AB93BE0000DCCD /* Assets.xcassets */; };
 		16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */; };
 		16F78E0A22AB93BE0000DCCD /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E0922AB93BE0000DCCD /* NovaTests.swift */; };
 		16F78E1522AB93BE0000DCCD /* NovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E1422AB93BE0000DCCD /* NovaUITests.swift */; };
@@ -117,6 +117,7 @@
 		166E28E522ACA8EC0044F6BA /* EpisodeEndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEndVC.swift; sourceTree = "<group>"; };
 		166E28E722ACAE3A0044F6BA /* EpisodeEndTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEndTopBar.swift; sourceTree = "<group>"; };
 		166E28E922AD00710044F6BA /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		166E28EB22AD32220044F6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16D852E422ABE0F800C4D38F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		16D852E622ABE76B00C4D38F /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		16D852E822ABEF7500C4D38F /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
@@ -133,7 +134,6 @@
 		16F78DF122AB93BD0000DCCD /* Nova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78DF422AB93BD0000DCCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16F78DF922AB93BD0000DCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		16F78DFB22AB93BE0000DCCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16F78DFE22AB93BE0000DCCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16F78E0022AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F78E0522AB93BE0000DCCD /* NovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,8 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				16377AD322ABACD8003AD022 /* localization.strings */,
+				166E28EB22AD32220044F6BA /* Assets.xcassets */,
 				16F78DF822AB93BD0000DCCD /* Main.storyboard */,
-				16F78DFB22AB93BE0000DCCD /* Assets.xcassets */,
 				16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */,
 				16F78E0022AB93BE0000DCCD /* Info.plist */,
 			);
@@ -287,8 +287,8 @@
 				16D8530422AC192200C4D38F /* GameVM.swift */,
 				16D8530022AC18F400C4D38F /* GameTableView.swift */,
 				16D8530222AC191900C4D38F /* GameStepModel.swift */,
-				16D8530622AC1B2A00C4D38F /* GameStepTableCell.swift */,
 				166E28CE22AC52E10044F6BA /* GameProfileView.swift */,
+				16D8530622AC1B2A00C4D38F /* GameStepTableCell.swift */,
 				166E28D422AC6DE40044F6BA /* Episodes */,
 			);
 			path = Game;
@@ -516,8 +516,8 @@
 				2398C72B22AC5292007A5421 /* AnswerView.xib in Resources */,
 				16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */,
 				16377AD122ABACD8003AD022 /* localization.strings in Resources */,
-				16F78DFC22AB93BE0000DCCD /* Assets.xcassets in Resources */,
 				16F78DFA22AB93BD0000DCCD /* Main.storyboard in Resources */,
+				166E28EC22AD32230044F6BA /* Assets.xcassets in Resources */,
 				2398C72722AC2EAE007A5421 /* GameStepView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

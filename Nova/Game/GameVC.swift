@@ -50,7 +50,7 @@ class GameVC: BaseVC {
         l.clipsToBounds = true
         l.layer.cornerRadius = UIScreen.main.bounds.width / 8
         l.setTitleColor(.orangeBase, for: .normal)
-        l.setTitle("Начать игру", for: .normal)
+        l.setTitle("Играть", for: .normal)
         return l
     }()
     
@@ -79,6 +79,31 @@ class GameVC: BaseVC {
         view.addSubview(table)
         view.addSubview(topContainer)
         view.addSubview(startBtn)
+        
+        backView.image = UIImage(named: "mapBack")
+        
+        let arc = UIImageView(image: UIImage(named: "weather"))
+        arc.frame = CGRect(x: view.bounds.width / 2, y: 100, width: view.bounds.width / 2 - 16, height: (view.bounds.width / 2 - 16)/3.3)
+        view.addSubview(arc)
+        arc.contentMode = .scaleAspectFit
+        let labl = UILabel(frame: CGRect(x:  16,
+                                   y: 0,
+                                   width: arc.bounds.width,
+                                   height: arc.bounds.height))
+        labl.font = UIFont.systemFont(ofSize: 16, weight: .heavy)
+        labl.text = "-12"
+        labl.textColor = .white
+        arc.addSubview(labl)
+        arcticTemp.asObservable().map { "\(Int($0))"}.bind(to: labl.rx.text).disposed(by: disposeBag)
+        
+        vm.steps.asObservable().map { (models) in
+            if models.count == 0 {
+                return 0
+            }
+            return Int(Float(models.filter({ $0.episode.passed }).count) / Float(models.count) * 100)
+            }.subscribe(onNext: { [unowned self] count in
+                self.profileView.progress = count
+            }).disposed(by: disposeBag)
         
         topContainer.addSubview(profileView)
         topContainer.addSubview(energyBar)
@@ -111,12 +136,25 @@ class GameVC: BaseVC {
         table.setContentOffset(.zero, animated: false)
         table.scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: table.bounds.size.width - 10)
         
-        profileView.name.text = "Vanya"
+        profileView.name.text = "Вася"
         profileView.progress = 5
         startBtn.rx.tap.asObservable().subscribe(onNext: { [unowned self] _ in
-            let vc = EpisodeVC(episode: episodesVal.value[0].episode)
-            self.present(NavigationVC(rootViewController: vc), animated: true, completion: nil)
+            if let episode = episodesVal.value.first(where: { $0.episode.passed == false }) {
+                self.present(episode: episode.episode)
+            }
         }).disposed(by: disposeBag)
+        table.rx.itemSelected.asObservable().withLatestFrom(vm.steps.asObservable()) {($0, $1)}
+            .subscribe(onNext: { [unowned self] ip, steps in
+                 let step = steps[ip.row]
+                if !step.episode.passed {
+                    self.present(episode: step.episode)
+                }
+            }).disposed(by: disposeBag)
+    }
+    
+    func present(episode: EpisodeModel) {
+        let vc = EpisodeVC(episode: episode)
+        self.present(NavigationVC(rootViewController: vc), animated: true, completion: nil)
     }
     
 }
