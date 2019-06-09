@@ -9,6 +9,8 @@ def shared_pods
     pod 'RxDataSources'
     pod 'RxKeyboard'
     pod 'RxAnimated'
+pod 'SwiftyJSON'
+pod 'Alamofire'
     
     pod 'Cartography'
 end

@@ -15,16 +15,9 @@ class KnowledgeVM {
     
     
     
+    let disposeBag = DisposeBag()
+    
     init() {
-//        cards.value = Array(repeating: KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description escription"), count: 11)
-        cards.value = [KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description escription"),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription"),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription"),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription"),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                       KnowledgeModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true)]
+        knowledgeVal.asObservable().bind(to: cards).disposed(by: disposeBag)
     }
 }

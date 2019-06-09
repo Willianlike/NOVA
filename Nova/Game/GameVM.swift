@@ -14,8 +14,11 @@ class GameVM {
     
     let steps = Variable<[GameStepModel]>([])
     
+    let disposeBag = DisposeBag()
+    
+    
     init() {
-        steps.value = gameEpisodes.value
+        episodesVal.asObservable().bind(to: steps).disposed(by: disposeBag)
     }
     
 }

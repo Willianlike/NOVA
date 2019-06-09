@@ -9,11 +9,26 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SwiftyJSON
 
-struct Param {
+struct Param: JSONDecodable {
+    
+    init(json: JSON) throws {
+        name = json["title"].stringValue
+        value = json["count"].intValue
+    }
+    
     var name: String
-    var value: Int
-    var color: UIColor
+    var value: Int = 100
+    var color: UIColor = .white
+    
+    init(name: String,
+         value: Int = 100,
+         color: UIColor = .white) {
+        self.name = name
+        self.value = value
+        self.color = color
+    }
 }
 
 let energyVal = Variable<Int>(100)
@@ -32,7 +47,7 @@ let energyVal = Variable<Int>(100)
 //        )
 //    ]
 //)
-let gameEpisodes = Variable<[GameStepModel]>([])
+let episodesVal = Variable<[GameStepModel]>([])
 
 let paramsVal = Variable<[Variable<Param>]>([Variable<Param>(Param(name: "Время", value: 100, color: .yel)),
                                    Variable<Param>(Param(name: "Сила", value: 40, color: .carrot)),
@@ -41,20 +56,21 @@ let paramsVal = Variable<[Variable<Param>]>([Variable<Param>(Param(name: "Вре
 
 
 
-let toolsVal = Variable<[ToolModel]>(Array(repeating: ToolModel(image: "emptyTool", name: "Empty", description: " description description escription"), count: 11))
+//let toolsVal = Variable<[ToolModel]>(Array(repeating: ToolModel(image: "emptyTool", name: "Empty", description: " description description escription"), count: 11))
+let toolsVal = Variable<[ToolModel]>([])
 
 
 
 
 
-
-let knowledgeVal = Variable<[KnowledgeModel]>([KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description escription"),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription"),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription"),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription"),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
-                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true)])
+let knowledgeVal = Variable<[KnowledgeModel]>([])
+//let knowledgeVal = Variable<[KnowledgeModel]>([KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description escription"),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription"),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription"),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription"),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true),
+//                                               KnowledgeModel(image: "emptyTool", name: "Empty", description: " description description description description description description description description description description description description description description escription", startHidden: true)])
 let defaultCornerRadius: CGFloat = 12

@@ -9,8 +9,15 @@
 import Foundation
 import RxSwift
 import RxDataSources
+import SwiftyJSON
 
-struct KnowledgeModel: IdentifiableType, Equatable {
+struct KnowledgeModel: IdentifiableType, Equatable, JSONDecodable {
+    init(json: JSON) throws {
+        image = json["image"].stringValue
+        name = json["title"].stringValue
+        description = json["descript"].stringValue
+    }
+    
     
     var image: String
     var name: String
