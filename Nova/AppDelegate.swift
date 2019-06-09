@@ -20,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = rootVC()
+
+        ArcticInfoRetriever.retrieve { (success, info: ArcticInfo?) in
+            print(success)
+            print(info)
+        }
+
         
         return true
     }

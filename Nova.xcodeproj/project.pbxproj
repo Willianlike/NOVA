@@ -52,6 +52,9 @@
 		16F78DFF22AB93BE0000DCCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16F78DFD22AB93BE0000DCCD /* LaunchScreen.storyboard */; };
 		16F78E0A22AB93BE0000DCCD /* NovaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E0922AB93BE0000DCCD /* NovaTests.swift */; };
 		16F78E1522AB93BE0000DCCD /* NovaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F78E1422AB93BE0000DCCD /* NovaUITests.swift */; };
+		235FCB9A22ACE1B7007CA4CE /* HttpSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235FCB9922ACE1B7007CA4CE /* HttpSender.swift */; };
+		235FCB9C22ACE2D7007CA4CE /* ArcticInfoRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235FCB9B22ACE2D7007CA4CE /* ArcticInfoRetriever.swift */; };
+		235FCB9F22ACE400007CA4CE /* ArcticInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235FCB9E22ACE400007CA4CE /* ArcticInfo.swift */; };
 		2398C71322ABD853007A5421 /* NovaTopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2398C71222ABD853007A5421 /* NovaTopBar.xib */; };
 		2398C71522ABD866007A5421 /* NovaTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71422ABD866007A5421 /* NovaTopBar.swift */; };
 		2398C71722ABD87D007A5421 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398C71622ABD87D007A5421 /* RoundButton.swift */; };
@@ -137,6 +140,9 @@
 		16F78E1022AB93BE0000DCCD /* NovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F78E1422AB93BE0000DCCD /* NovaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaUITests.swift; sourceTree = "<group>"; };
 		16F78E1622AB93BE0000DCCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		235FCB9922ACE1B7007CA4CE /* HttpSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpSender.swift; sourceTree = "<group>"; };
+		235FCB9B22ACE2D7007CA4CE /* ArcticInfoRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcticInfoRetriever.swift; sourceTree = "<group>"; };
+		235FCB9E22ACE400007CA4CE /* ArcticInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcticInfo.swift; sourceTree = "<group>"; };
 		2398C71222ABD853007A5421 /* NovaTopBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NovaTopBar.xib; sourceTree = "<group>"; };
 		2398C71422ABD866007A5421 /* NovaTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaTopBar.swift; sourceTree = "<group>"; };
 		2398C71622ABD87D007A5421 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -311,6 +317,7 @@
 		16F78DF322AB93BD0000DCCD /* Nova */ = {
 			isa = PBXGroup;
 			children = (
+				235FCB9D22ACE2E3007CA4CE /* ArcticInfo */,
 				2398C71122ABD820007A5421 /* Components */,
 				16F78DF422AB93BD0000DCCD /* AppDelegate.swift */,
 				16D852E422ABE0F800C4D38F /* Colors.swift */,
@@ -344,6 +351,16 @@
 				16F78E1622AB93BE0000DCCD /* Info.plist */,
 			);
 			path = NovaUITests;
+			sourceTree = "<group>";
+		};
+		235FCB9D22ACE2E3007CA4CE /* ArcticInfo */ = {
+			isa = PBXGroup;
+			children = (
+				235FCB9922ACE1B7007CA4CE /* HttpSender.swift */,
+				235FCB9B22ACE2D7007CA4CE /* ArcticInfoRetriever.swift */,
+				235FCB9E22ACE400007CA4CE /* ArcticInfo.swift */,
+			);
+			path = ArcticInfo;
 			sourceTree = "<group>";
 		};
 		2398C71122ABD820007A5421 /* Components */ = {
@@ -566,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D852F022ABF0AB00C4D38F /* KnowledgeModel.swift in Sources */,
+				235FCB9F22ACE400007CA4CE /* ArcticInfo.swift in Sources */,
 				16377ADC22ABB29C003AD022 /* ToolsCollectionView.swift in Sources */,
 				2398C72D22AC52A9007A5421 /* AnswerView.swift in Sources */,
 				16377AC322ABA6DB003AD022 /* TabBarController.swift in Sources */,
@@ -577,6 +595,7 @@
 				2398C71722ABD87D007A5421 /* RoundButton.swift in Sources */,
 				16377AD822ABAF95003AD022 /* NavigationVC.swift in Sources */,
 				2398C72522AC21DF007A5421 /* TestVC.swift in Sources */,
+				235FCB9A22ACE1B7007CA4CE /* HttpSender.swift in Sources */,
 				166E28DE22AC7B4E0044F6BA /* EpisodeStepView.swift in Sources */,
 				166E28CF22AC52E10044F6BA /* GameProfileView.swift in Sources */,
 				16D8530122AC18F400C4D38F /* GameTableView.swift in Sources */,
@@ -595,6 +614,7 @@
 				2398C72122AC11F4007A5421 /* UIView+extension.swift in Sources */,
 				16377ACA22ABA9B0003AD022 /* ToolsVC.swift in Sources */,
 				166E28E022AC81010044F6BA /* CornoredShadowView.swift in Sources */,
+				235FCB9C22ACE2D7007CA4CE /* ArcticInfoRetriever.swift in Sources */,
 				166E28E822ACAE3A0044F6BA /* EpisodeEndTopBar.swift in Sources */,
 				16D8530322AC191900C4D38F /* GameStepModel.swift in Sources */,
 				16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */,
