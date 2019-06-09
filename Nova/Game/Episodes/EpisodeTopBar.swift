@@ -21,7 +21,7 @@ class EpisodeTopBar: UIView {
     
     let progress: UIProgressView = {
         let l = UIProgressView(progressViewStyle: .bar)
-        l.progress = 0.5
+        l.progress = 0
         l.progressTintColor = .orangeBase
         l.trackTintColor = .blueBase
         return l

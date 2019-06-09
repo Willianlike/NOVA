@@ -13,12 +13,13 @@ import RxCocoa
 struct Param {
     var name: String
     var value: Int
+    var color: UIColor
 }
 
 let energyVal = Variable<Int>(100)
-let paramsVal = Variable<[Param]>([Param(name: "Время", value: 100),
-                                   Param(name: "Сила", value: 100),
-                                   Param(name: "Здоровье", value: 100),
-                                   Param(name: "Питание", value: 100)])
+let paramsVal = Variable<[Variable<Param>]>([Variable<Param>(Param(name: "Время", value: 100, color: .yel)),
+                                   Variable<Param>(Param(name: "Сила", value: 40, color: .carrot)),
+                                   Variable<Param>(Param(name: "Здоровье", value: 35, color: .blueBase)),
+                                   Variable<Param>(Param(name: "Питание", value: 87, color: .birusa))])
 
 let defaultCornerRadius: CGFloat = 12

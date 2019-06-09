@@ -113,21 +113,21 @@ class GameVC: BaseVC {
         
         profileView.name.text = "Vanya"
         profileView.progress = 5
-        let answers1 = [AnswerModel(image: "empty", title: " ok1 ok1 ok1 ok1 ok1ok1 ok1 ok1 ok1 ok1 ok1ok1 ok1 ok1 ok1 ok1 ok1ok1 ok1 ok1 ok1 ok1 ok1ok1 ok1 ok1 ok1 ok1 ok1ok1 ok1 ok1 ok1 ok1 ok1ok1", changeParams: []),
-                        AnswerModel(image: "empty", title: "ok2", changeParams: []),
-                        AnswerModel(image: "empty", title: "ok3", changeParams: []),
-                        AnswerModel(image: "empty", title: "ok4", changeParams: [])]
-        let answers2 = [AnswerModel(image: "empty", title: "111", changeParams: []),
-                        AnswerModel(image: "empty", title: "222", changeParams: []),
-                        AnswerModel(image: "empty", title: "333", changeParams: []),
-                        AnswerModel(image: "empty", title: "444", changeParams: [])]
-        let steps = [StepModel(name: "step1", desc: "description",
-                               question: "question", isLast: false, answers: answers1),
-                     StepModel(name: "step2", desc: "description2",
-                               question: "question2", isLast: false, answers: answers2)]
-        let model = EpisodeModel(name: "my", energy: 13, steps: steps)
-        let vc = EpisodeVC(episode: model)
         startBtn.rx.tap.asObservable().subscribe(onNext: { [unowned self] _ in
+            let answers1 = [AnswerModel(image: "empty", title: " ok", changeParams: []),
+                            AnswerModel(image: "empty", title: "ok2", changeParams: [Param(name: "Время", value: -10, color: .clear)]),
+                            AnswerModel(image: "empty", title: "ok3", changeParams: [Param(name: "Время", value: -10, color: .clear)]),
+                            AnswerModel(image: "empty", title: "ok4", changeParams: [])]
+            let answers2 = [AnswerModel(image: "empty", title: "111", changeParams: []),
+                            AnswerModel(image: "empty", title: "222", changeParams: [Param(name: "Время", value: -10, color: .clear)]),
+                            AnswerModel(image: "empty", title: "333", changeParams: []),
+                            AnswerModel(image: "empty", title: "444", changeParams: [])]
+            let steps = [StepModel(name: "step1", desc: "description",
+                                   question: "question", isLast: false, image: "empty", answers: answers1),
+                         StepModel(name: "step2", desc: "description2",
+                                   question: "question2", isLast: false, image: "launchBack", answers: answers2)]
+            let model = EpisodeModel(name: "my", energy: 13, steps: steps)
+            let vc = EpisodeVC(episode: model)
             self.present(vc, animated: true, completion: nil)
         }).disposed(by: disposeBag)
     }

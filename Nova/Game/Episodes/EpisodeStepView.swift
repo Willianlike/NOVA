@@ -29,8 +29,9 @@ class EpisodeStepView: UIView {
         let l = UIImageView()
         constrain(l, block: { (l) in
             l.width == UIScreen.main.bounds.width * 2 / 3
-            l.height == l.width
+//            l.height == l.width
         })
+        l.contentMode = .scaleAspectFit
         return l
     }()
     
@@ -155,6 +156,7 @@ class EpisodeStepView: UIView {
         
         desc.text = step.desc
         question.text = step.question
+        image.image = UIImage(named: step.image)
         
     }
     

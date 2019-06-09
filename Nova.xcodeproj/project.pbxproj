@@ -30,6 +30,8 @@
 		166E28DE22AC7B4E0044F6BA /* EpisodeStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28DD22AC7B4E0044F6BA /* EpisodeStepView.swift */; };
 		166E28E022AC81010044F6BA /* CornoredShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28DF22AC81010044F6BA /* CornoredShadowView.swift */; };
 		166E28E222AC8BBC0044F6BA /* EpisodeTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E122AC8BBC0044F6BA /* EpisodeTopBar.swift */; };
+		166E28E422AC95AD0044F6BA /* EpisodesBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E322AC95AD0044F6BA /* EpisodesBottomBar.swift */; };
+		166E28E622ACA8EC0044F6BA /* EpisodeEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E522ACA8EC0044F6BA /* EpisodeEndView.swift */; };
 		16D852E522ABE0F800C4D38F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E422ABE0F800C4D38F /* Colors.swift */; };
 		16D852E722ABE76B00C4D38F /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E622ABE76B00C4D38F /* String+extension.swift */; };
 		16D852E922ABEF7500C4D38F /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E822ABEF7500C4D38F /* SegmentedControl.swift */; };
@@ -106,6 +108,8 @@
 		166E28DD22AC7B4E0044F6BA /* EpisodeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeStepView.swift; sourceTree = "<group>"; };
 		166E28DF22AC81010044F6BA /* CornoredShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornoredShadowView.swift; sourceTree = "<group>"; };
 		166E28E122AC8BBC0044F6BA /* EpisodeTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTopBar.swift; sourceTree = "<group>"; };
+		166E28E322AC95AD0044F6BA /* EpisodesBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesBottomBar.swift; sourceTree = "<group>"; };
+		166E28E522ACA8EC0044F6BA /* EpisodeEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEndView.swift; sourceTree = "<group>"; };
 		16D852E422ABE0F800C4D38F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		16D852E622ABE76B00C4D38F /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		16D852E822ABEF7500C4D38F /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
@@ -237,8 +241,10 @@
 				166E28D522AC6DF10044F6BA /* EpisodeVC.swift */,
 				166E28DD22AC7B4E0044F6BA /* EpisodeStepView.swift */,
 				166E28E122AC8BBC0044F6BA /* EpisodeTopBar.swift */,
+				166E28E322AC95AD0044F6BA /* EpisodesBottomBar.swift */,
 				166E28DB22AC770A0044F6BA /* EpisodeContent.swift */,
 				166E28D722AC6DFD0044F6BA /* EpisodeModel.swift */,
+				166E28E522ACA8EC0044F6BA /* EpisodeEndView.swift */,
 			);
 			path = Episodes;
 			sourceTree = "<group>";
@@ -347,8 +353,8 @@
 				2398C71822ABD887007A5421 /* RoundView.swift */,
 				2398C71C22ABF750007A5421 /* GameFieldView.xib */,
 				2398C72222AC134E007A5421 /* GameFieldView.swift */,
-				2398C72422AC21DF007A5421 /* TestVC.swift */,
 				2398C72622AC2EAE007A5421 /* GameStepView.xib */,
+				2398C72422AC21DF007A5421 /* TestVC.swift */,
 				2398C72822AC2EC1007A5421 /* GameStepView.swift */,
 				2398C72A22AC5292007A5421 /* AnswerView.xib */,
 				2398C72C22AC52A9007A5421 /* AnswerView.swift */,
@@ -572,6 +578,7 @@
 				166E28CF22AC52E10044F6BA /* GameProfileView.swift in Sources */,
 				16D8530122AC18F400C4D38F /* GameTableView.swift in Sources */,
 				166E28D622AC6DF10044F6BA /* EpisodeVC.swift in Sources */,
+				166E28E622ACA8EC0044F6BA /* EpisodeEndView.swift in Sources */,
 				16377ADF22ABB4F6003AD022 /* ToolsVM.swift in Sources */,
 				16377AE522ABB72E003AD022 /* VCNavigation.swift in Sources */,
 				16D8530522AC192200C4D38F /* GameVM.swift in Sources */,
@@ -588,6 +595,7 @@
 				16D8530322AC191900C4D38F /* GameStepModel.swift in Sources */,
 				16F78DF522AB93BD0000DCCD /* AppDelegate.swift in Sources */,
 				16D852EC22ABF08C00C4D38F /* KnowledgeVC.swift in Sources */,
+				166E28E422AC95AD0044F6BA /* EpisodesBottomBar.swift in Sources */,
 				16377AC622ABA94F003AD022 /* GameVC.swift in Sources */,
 				16377AF222ABC3DC003AD022 /* ReusableView.swift in Sources */,
 				16D852EE22ABF09C00C4D38F /* KnowledgeVM.swift in Sources */,

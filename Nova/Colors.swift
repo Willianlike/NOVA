@@ -30,5 +30,8 @@ extension UIColor {
     static let orangeBase = UIColor(hexString: "#FA9D44")
     static let blueBase = UIColor(hexString: "#3671DA")
     static let blueSup = UIColor(hexString: "#3590F5")
+    static let birusa = UIColor(hexString: "#12D1D6")
+    static let carrot = UIColor(hexString: "#FC524F")
+    static let yel = UIColor(hexString: "#FFD207")
 }
 

@@ -39,7 +39,7 @@ class EpisodeContent: UIScrollView {
         isDirectionalLockEnabled = true
         addSubview(content)
         constrain(self, content) { $1.edges == $0.edges
-            $1.height == UIScreen.main.bounds.height - EpisodeTopBar.needHeight }
+            $1.height == UIScreen.main.bounds.height - EpisodeTopBar.needHeight - EpisodesBottomBar.needHeight }
         isScrollEnabled = false
         backgroundColor = .white
     }

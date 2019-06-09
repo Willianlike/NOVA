@@ -23,6 +23,7 @@ struct StepModel {
     var desc: String
     var question: String
     var isLast: Bool
+    var image: String
     var answers: [AnswerModel]
     
 }
