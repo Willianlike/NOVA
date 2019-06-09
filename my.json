@@ -202,5 +202,143 @@
 				]
 			}
 		]
-	}]
+	},{
+		"title": "Episode2",
+		"energy": 12,
+		"regardsTools": [{
+				"title": "Консервы",
+				"count": 3
+			},
+			{
+				"title": "Топор",
+				"count": 1
+			}
+		],
+		"regardsKnowledge": [{
+			"title": "Медведь",
+			"views": true
+		}],
+		"steps": [{
+				"title": "Вы проплывали на торговом судне мимо Арктики. Ваш корабль столкнулся с айсбергом и быстро пошел ко дну. Вы чудом спаслись на куске фезюляжа и Вас прибило к берегу.",
+				"question": "Что Вы будете делать?",
+				"answers": [{
+						"name": "Найти кость чтобы сделать нож",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step1_0"
+					},
+					{
+						"name": "Найти камни чтобы сделать ловушку загон для рыб",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step1_1"
+					},
+					{
+						"name": "Кричать о помощи вдруг кто услышит",
+						"settings": [{
+							"title": "Force",
+							"count": -2,
+							"target": "Step2"
+						}],
+						"image": "step1_2"
+					},
+					{
+						"name": "Выложить из вещей камней надпись SOS",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step1_3"
+					}
+				]
+			},
+			{
+				"title": "Вы решили кричать, в надежде что Вас кто-то услышит...",
+				"question": "Как вы будете это делать?",
+				"answers": [{
+						"name": "Долго кричать",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step2_0"
+					},
+					{
+						"name": "Свистеть",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step2_1"
+					},
+					{
+						"name": "Громко кричать",
+						"settings": [{
+							"title": "Force",
+							"count": -2,
+							"target": "Step3"
+						}],
+						"image": "step2_2"
+					},
+					{
+						"name": "Рычать",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step2_3"
+					}
+				]
+			},
+
+			{
+				"title": "Вы громко кричали, и вдруг увидели, что на Вас стремительно надвигается белый медведь...",
+				"question": "Что же делать?",
+				"answers": [{
+						"name": "Быстро убежать и скрыться за препятствием",
+						"settings": [{
+							"title": "Force",
+							"count": -2,
+							"target": "Congratulations"
+						}],
+						"image": "step3_0"
+					},
+					{
+						"name": "Лечь и притвориться мертвым",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step3_1"
+					},
+					{
+						"name": "Побежать ему на встречу и напугать",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step3_2"
+					},
+					{
+						"name": "Нырнуть под воду",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step3_3"
+					},
+					{
+						"name": "Нырнуть под воду",
+						"settings": [{
+							"title": "Force",
+							"count": -2
+						}],
+						"image": "step3_4"
+					}
+				]
+			}]}]
 }
