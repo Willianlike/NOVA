@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        loadJSON()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = rootVC()
@@ -53,6 +55,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         return TabBarController(vcs: vcs)
+    }
+    
+    func loadJSON() {
+        let urlStr = "https://raw.githubusercontent.com/Willianlike/NOVA/master/my.json"
+        
+        guard let url = URL(string: urlStr) else { return }
+        
+        Alamofire.request(url, method: .get)
+            .responseJSON { response in
+                guard response.result.isSuccess,
+                    let data = response.result.value else {
+                        print("Refresh config error \(String(describing: response.result.error))")
+                        return
+                }
+                let json = JSON(data)
+                if let knowledge = try? json["knowledge"].arrayValue.map({ try KnowledgeModel(json: $0) }) {
+                    knowledgeVal.value = knowledge
+                }
+                if let tools = try? json["tools"].arrayValue.map({ try ToolModel(json: $0) }) {
+                    toolsVal.value = tools
+                }
+                if let episodes = try? json["episodes"].arrayValue.map({ try EpisodeModel(json: $0) }).map({ GameStepModel(episode: $0)}) {
+                    episodesVal.value = episodes
+                }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

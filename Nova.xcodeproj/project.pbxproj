@@ -33,6 +33,7 @@
 		166E28E422AC95AD0044F6BA /* EpisodesBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E322AC95AD0044F6BA /* EpisodesBottomBar.swift */; };
 		166E28E622ACA8EC0044F6BA /* EpisodeEndVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E522ACA8EC0044F6BA /* EpisodeEndVC.swift */; };
 		166E28E822ACAE3A0044F6BA /* EpisodeEndTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E722ACAE3A0044F6BA /* EpisodeEndTopBar.swift */; };
+		166E28EA22AD00710044F6BA /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E28E922AD00710044F6BA /* JSON.swift */; };
 		16D852E522ABE0F800C4D38F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E422ABE0F800C4D38F /* Colors.swift */; };
 		16D852E722ABE76B00C4D38F /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E622ABE76B00C4D38F /* String+extension.swift */; };
 		16D852E922ABEF7500C4D38F /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D852E822ABEF7500C4D38F /* SegmentedControl.swift */; };
@@ -115,6 +116,7 @@
 		166E28E322AC95AD0044F6BA /* EpisodesBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesBottomBar.swift; sourceTree = "<group>"; };
 		166E28E522ACA8EC0044F6BA /* EpisodeEndVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEndVC.swift; sourceTree = "<group>"; };
 		166E28E722ACAE3A0044F6BA /* EpisodeEndTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeEndTopBar.swift; sourceTree = "<group>"; };
+		166E28E922AD00710044F6BA /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		16D852E422ABE0F800C4D38F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		16D852E622ABE76B00C4D38F /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		16D852E822ABEF7500C4D38F /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				16D852E422ABE0F800C4D38F /* Colors.swift */,
 				16D852E622ABE76B00C4D38F /* String+extension.swift */,
 				166E28D222AC6A6E0044F6BA /* Globals.swift */,
+				166E28E922AD00710044F6BA /* JSON.swift */,
 				16377AEE22ABBFEE003AD022 /* Views */,
 				16D852FE22AC06E500C4D38F /* Settings */,
 				16D852FF22AC187D00C4D38F /* Game */,
@@ -599,6 +602,7 @@
 				166E28DE22AC7B4E0044F6BA /* EpisodeStepView.swift in Sources */,
 				166E28CF22AC52E10044F6BA /* GameProfileView.swift in Sources */,
 				16D8530122AC18F400C4D38F /* GameTableView.swift in Sources */,
+				166E28EA22AD00710044F6BA /* JSON.swift in Sources */,
 				166E28D622AC6DF10044F6BA /* EpisodeVC.swift in Sources */,
 				166E28E622ACA8EC0044F6BA /* EpisodeEndVC.swift in Sources */,
 				16377ADF22ABB4F6003AD022 /* ToolsVM.swift in Sources */,

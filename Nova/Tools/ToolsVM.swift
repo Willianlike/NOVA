@@ -13,9 +13,9 @@ class ToolsVM {
     
     let cards = Variable<[ToolModel]>([])
     
-    
+    let disposeBag = DisposeBag()
     
     init() {
-        cards.value = Array(repeating: ToolModel(image: UIImage(named: "emptyTool"), name: "Empty", description: " description description escription"), count: 11)
+        toolsVal.asObservable().bind(to: cards).disposed(by: disposeBag)
     }
 }

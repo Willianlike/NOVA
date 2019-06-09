@@ -92,7 +92,7 @@ class CardCollectionCell: UICollectionViewCell, ReusableView {
     }
     
     func configure(model: KnowledgeModel) {
-        image.image = model.image
+        image.image = UIImage(named: model.image)
         desc.text = model.description
         name.text = model.name
         littleStar.isHidden = model.startHidden
@@ -101,7 +101,7 @@ class CardCollectionCell: UICollectionViewCell, ReusableView {
     }
     
     func configure(model: ToolModel) {
-        image.image = model.image
+        image.image = UIImage(named: model.image) 
         desc.text = model.description
         name.text = model.name
         littleStar.isHidden = model.startHidden
