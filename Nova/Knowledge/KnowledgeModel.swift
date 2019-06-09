@@ -12,7 +12,7 @@ import RxDataSources
 
 struct KnowledgeModel: IdentifiableType, Equatable {
     
-    var image: UIImage?
+    var image: String
     var name: String
     var description: String
     var startHidden: Bool = false
@@ -20,7 +20,7 @@ struct KnowledgeModel: IdentifiableType, Equatable {
     let firstFont = UIFont.systemFont(ofSize: 20, weight: .bold)
     let secondFont = UIFont.systemFont(ofSize: 13, weight: .light)
     
-    init(image: UIImage?,
+    init(image: String,
          name: String,
          description: String,
          startHidden: Bool = false) {
@@ -31,7 +31,7 @@ struct KnowledgeModel: IdentifiableType, Equatable {
     }
     
     var identity: String {
-        return name + description + "\(String(describing: image?.description))"
+        return name + description + image
     }
     
     static func == (lhs: KnowledgeModel, rhs: KnowledgeModel) -> Bool {

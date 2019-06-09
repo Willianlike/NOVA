@@ -12,7 +12,7 @@ import RxDataSources
 
 struct ToolModel: IdentifiableType, Equatable {
     
-    var image: UIImage?
+    var image: String
     var name: String
     var description: String
     var startHidden: Bool = false
@@ -20,7 +20,7 @@ struct ToolModel: IdentifiableType, Equatable {
     let firstFont = UIFont.systemFont(ofSize: 20, weight: .bold)
     let secondFont = UIFont.systemFont(ofSize: 13, weight: .light)
     
-    init(image: UIImage?,
+    init(image: String,
          name: String,
          description: String) {
         self.image = image
@@ -29,7 +29,7 @@ struct ToolModel: IdentifiableType, Equatable {
     }
     
     var identity: String {
-        return name + description + "\(String(describing: image?.description))"
+        return name + description + image
     }
     
     static func == (lhs: ToolModel, rhs: ToolModel) -> Bool {
