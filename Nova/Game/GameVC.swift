@@ -126,9 +126,9 @@ class GameVC: BaseVC {
                                    question: "question", isLast: false, image: "empty", answers: answers1),
                          StepModel(name: "step2", desc: "description2",
                                    question: "question2", isLast: false, image: "launchBack", answers: answers2)]
-            let model = EpisodeModel(name: "my", energy: 13, steps: steps)
+            let model = EpisodeModel(name: "my f djfjd df df fdkjdkf kdf k fkdkjf ", energy: 13, steps: steps, regardsTools: toolsVal.value, regardsKnowledge: knowledgeVal.value)
             let vc = EpisodeVC(episode: model)
-            self.present(vc, animated: true, completion: nil)
+            self.present(NavigationVC(rootViewController: vc), animated: true, completion: nil)
         }).disposed(by: disposeBag)
     }
     

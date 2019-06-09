@@ -19,6 +19,8 @@ class EpisodeContent: UIScrollView {
     
     let content = UIView()
     
+    weak var host: EpisodeVC?
+    
     init(views: [UIView]) {
         super.init(frame: CGRect())
         didLoad()
@@ -45,7 +47,13 @@ class EpisodeContent: UIScrollView {
     }
     
     func scrollToNext() {
-        setContentOffset(CGPoint(x: contentOffset.x + UIScreen.main.bounds.width, y: 0), animated: true)
+        if contentOffset.x + UIScreen.main.bounds.width * 2 <= contentSize.width {
+            setContentOffset(CGPoint(x: contentOffset.x + UIScreen.main.bounds.width, y: 0), animated: true)
+        } else {
+            if let ep = host?.episode {
+                host?.navigationController?.pushViewController(EpisodeEndVC(episode: ep), animated: true)
+            }
+        }
     }
     
     func viewsUpdated() {

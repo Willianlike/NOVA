@@ -62,6 +62,7 @@ class EpisodeVC: BaseVC {
         topBar.backBtn.rx.tap.asObservable().subscribe(onNext: { [unowned self] _ in
             self.dismiss(animated: true, completion: nil)
         }).disposed(by: disposeBag)
+        episodeContent.host = self
     }
     
     required init?(coder aDecoder: NSCoder) {

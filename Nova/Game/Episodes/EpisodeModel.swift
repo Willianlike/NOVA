@@ -14,7 +14,8 @@ struct EpisodeModel {
     var name: String
     var energy: Int
     var steps: [StepModel]
-    
+    var regardsTools: [ToolModel]
+    var regardsKnowledge: [KnowledgeModel]
 }
 
 struct StepModel {

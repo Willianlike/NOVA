@@ -14,7 +14,7 @@ class BaseVC: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    let backView: UIView = {
+    let backView: UIImageView = {
         let v = UIImageView(image: UIImage(named: "beautyBackground"))
         return v
     }()

@@ -46,6 +46,11 @@ class CardCollectionCell: UICollectionViewCell, ReusableView {
         return l
     }()
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        contentView.layer.shadowPath = nil
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .clear
@@ -54,11 +59,8 @@ class CardCollectionCell: UICollectionViewCell, ReusableView {
         contentView.addSubview(littleStar)
         self.contentView.clipsToBounds = true
         self.contentView.layer.cornerRadius = 16
-        self.clipsToBounds = true
-        self.layer.cornerRadius = 16
         self.content.layer.cornerRadius = 16
         contentView.applyShadow()
-        applyShadow()
         content.addSubview(image)
         content.addSubview(stack)
         stack.addArrangedSubview(name)
