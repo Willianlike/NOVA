@@ -50,9 +50,9 @@ let energyVal = Variable<Int>(100)
 let episodesVal = Variable<[GameStepModel]>([])
 
 let paramsVal = Variable<[Variable<Param>]>([Variable<Param>(Param(name: "Время", value: 100, color: .yel)),
-                                   Variable<Param>(Param(name: "Сила", value: 40, color: .carrot)),
-                                   Variable<Param>(Param(name: "Здоровье", value: 35, color: .blueBase)),
-                                   Variable<Param>(Param(name: "Питание", value: 87, color: .birusa))])
+                                   Variable<Param>(Param(name: "Сила", value: 100, color: .carrot)),
+                                   Variable<Param>(Param(name: "Здоровье", value: 100, color: .blueBase)),
+                                   Variable<Param>(Param(name: "Питание", value: 100, color: .birusa))])
 
 
 
