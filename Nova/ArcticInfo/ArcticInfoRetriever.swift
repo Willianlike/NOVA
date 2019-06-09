@@ -18,16 +18,11 @@ class ArcticInfoRetriever {
     static func retrieve(callback: @escaping (_ success: Bool, _ info: ArcticInfo?) -> Void) {
         let sender = HttpSender()
         sender.send(url: HERE_URL, callback: { (reply, status, error) in
-            if (nil == status) {
-                print("HTTP: NULL status")
-            } else {
-                print("HTTP: status=" + String(status!))
-            }
             let success = (nil != status && 200 == status)
             if (nil != reply) {
                 do {
                     let data = reply!.data(using: .utf8)
-                    print("HTTP: reply: \(reply)")
+                    //print("HTTP: reply: \(reply)")
                     if let jsonReply = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [String: Any] {
                         callback(success, ArcticInfo.fromJson(jsonReply))
                     }

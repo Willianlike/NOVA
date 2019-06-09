@@ -22,8 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = rootVC()
 
         ArcticInfoRetriever.retrieve { (success, info: ArcticInfo?) in
-            print(success)
-            print(info)
+            if let temp = info?.temperature {
+                print("Arctic temperature: \(temp)")
+            } else {
+                print("Arctic temperature fail")
+            }
         }
 
         

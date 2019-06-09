@@ -22,7 +22,8 @@ class ArcticInfo {
         for i in location {
             let loc: [String: Any] = i
             guard let country: String = loc["country"] as? String else { continue }
-            if ("Arctica" != country) {
+            // do trick Arctic > Antarctica
+            if ("Antarctica" != country) {
                 continue
             }
             guard let observation: [[String: Any]] = loc["observation"] as? [[String: Any]] else { continue }
