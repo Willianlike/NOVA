@@ -10,6 +10,16 @@
 import UIKit
 
 public extension UIView {
+    
+    func applyShadow(height: CGFloat = 8, radius: CGFloat = 12,
+                     opacity: Float = 0.2, color: UIColor = .black) {
+        layer.shadowColor = color.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: height)
+        layer.shadowRadius = height
+        layer.shadowOpacity = opacity
+        layer.masksToBounds = false
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: radius).cgPath
+    }
 
     enum ViewSide {
         case top

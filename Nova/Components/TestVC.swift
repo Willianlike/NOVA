@@ -48,7 +48,9 @@ class TestVC: BaseVC {
     }
 
     func setupVM() {
-
+        gameFieldView?.backButton.rx.tap.asObservable().subscribe(onNext: { [unowned self] _ in
+            self.dismiss(animated: true, completion: nil)
+        }).disposed(by: disposeBag)
     }
 
     func initStep(levelNum: Int, stepName: String) {

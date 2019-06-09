@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 import Cartography
 
 @IBDesignable
@@ -40,6 +41,8 @@ class EnergyBar: UIView {
         return v
     }()
     
+    let disposeBag = DisposeBag()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         didLoad()
@@ -56,12 +59,17 @@ class EnergyBar: UIView {
         self.addSubview(lighting)
         label.text = "\(energy)"
         
+        energyVal.asObservable().subscribe(onNext: { [unowned self] val in
+            self.energy = val
+        }).disposed(by: disposeBag)
+        
         constrain(self, label, background, lighting) { view, label, back, lighting in
             back.edges == inset(view.edges, 8, -16, 8, 0)
             label.edges == inset(view.edges, 0, 0, 0, 0)
             lighting.leading == back.leading + 8
             lighting.centerY == back.centerY
         }
+        
     }
     
 }

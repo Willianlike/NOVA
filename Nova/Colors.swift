@@ -29,5 +29,6 @@ extension UIColor {
     
     static let orangeBase = UIColor(hexString: "#FA9D44")
     static let blueBase = UIColor(hexString: "#3671DA")
+    static let blueSup = UIColor(hexString: "#3590F5")
 }
 

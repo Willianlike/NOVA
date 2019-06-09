@@ -48,13 +48,17 @@ class CardCollectionCell: UICollectionViewCell, ReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.content.clipsToBounds = true
-        self.content.layer.cornerRadius = 16
         self.backgroundColor = .clear
         content.backgroundColor = .white
-        clipsToBounds = false
         contentView.addSubview(content)
         contentView.addSubview(littleStar)
+        self.contentView.clipsToBounds = true
+        self.contentView.layer.cornerRadius = 16
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 16
+        self.content.layer.cornerRadius = 16
+        contentView.applyShadow()
+        applyShadow()
         content.addSubview(image)
         content.addSubview(stack)
         stack.addArrangedSubview(name)
